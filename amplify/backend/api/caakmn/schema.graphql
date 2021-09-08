@@ -1,0 +1,199 @@
+type File @model
+  @auth(rules: [
+    { allow: groups, groups: ["users"], operations: [read, update, create, delete]}
+    { allow: public, provider: iam, operations: [read]}
+  ]){
+    id: ID!
+    key: String!
+    name: String!
+    owner: String
+    bucket: String!
+    region: String!
+    level: String!
+    ext: String!
+    url: String
+}
+
+type UserDetail @model
+  @auth(rules: [
+    { allow: groups, groups: ["users"], operations: [read, update, create, delete]}
+    { allow: public, provider: iam, operations: [read]}
+  ])
+  @key(name: "byUserID", fields:["user_id"] , queryField:"getUserDetailByUserID"){
+  id: ID!
+  user_id: ID!
+  firstname: String!
+  lastname: String
+  birthdate: String
+  gender: String!
+  pic_id: ID!
+  pic: File! @connection(fields:["pic_id"])
+  cover_pic_id: ID
+  cover_pic: File @connection(fields:["cover_pic_id"])
+  about: String
+  aura: Int
+  followers: [FollowedUsers] @connection(keyName: "byFollowed", fields: ["id"])
+  following: [FollowedUsers] @connection(keyName: "byFollowing", fields: ["id"])
+  is_public: Boolean
+  categorys: [UserCategory] @connection(keyName: "byUser", fields: ["id"])
+  group: [GroupUsers] @connection(keyName: "byUser", fields: ["id"])
+  status: String!
+}
+
+type FollowedUsers @model
+  @auth(rules: [
+    { allow: groups, groups: ["users"], operations: [read, update, create, delete]}
+    { allow: public, provider: iam, operations: [read]}
+  ])
+  @key(fields: ["user_id","followed_user_id"])
+  @key(name: "byFollowed", fields: ["user_id"])
+  @key(name: "byFollowing", fields: ["followed_user_id"]){
+  user_id: ID!
+  followed_user_id: ID!
+}
+
+type UserCategory @model
+  @auth(rules: [
+    { allow: groups, groups: ["users"], operations: [read, update, create, delete]}
+    { allow: public, provider: iam, operations: [read]}
+  ])
+  @key(fields: ["user_id","category_id"])
+  @key(name: "byUser", fields:["user_id"])
+  @key(name: "byCategory", fields:["category_id"]){
+  id: ID!
+  user_id: ID!
+  category_id: ID!
+  category: Category! @connection(fields: ["category_id"])
+}
+
+type Category @model
+  @auth(rules: [
+    { allow: groups, groups: ["users"], operations: [read, update, create, delete]}
+    { allow: public, provider: iam, operations: [read]}
+  ]){
+  id: ID!
+  name: String!
+  icon: String!
+}
+
+type Post @model
+  @searchable
+  @auth(rules: [
+    { allow: groups, groups: ["users"], operations: [read, update, create, delete]}
+    { allow: public, provider: iam, operations: [read]}
+  ])
+  @key(name: "byParent", fields: ["parent_id","updatedAt"])
+  @key(name: "byType", fields:["type","updatedAt"] , queryField:"getPostByType")
+  @key(name: "byGroup", fields:["group_id","updatedAt"] , queryField:"getPostByGroup")
+  @key(name: "byUser", fields:["user_id","updatedAt"] , queryField:"getPostByUser"){
+  id: ID!
+  title: String!
+  subject: String
+  file_id: ID!
+  file: File @connection(fields:["file_id"])
+  status: String!
+  commentType: String!
+  type: String!
+  parent_id: ID
+  subs: [Post] @connection(keyName:"byParent" fields:["id"])
+  user_id: ID!
+  user: UserDetail @connection(fields:["user_id"])
+  group_id: ID!
+  group: Group @connection(fields:["group_id"])
+  category_id: ID!
+  category: Category @connection(fields:["category_id"])
+  comments: [Comment] @connection(keyName:"byPost", fields:["id"])
+  reactions: [PostReaction] @connection(keyName: "byPost", fields:["id"])
+  createdAt: AWSDateTime!
+  updatedAt: AWSDateTime!
+  order: Int
+}
+
+type Comment @model
+  @auth(rules: [
+    { allow: groups, groups: ["users"], operations: [read, update, create, delete]}
+    { allow: public, provider: iam, operations: [read]}
+  ])
+  @key(name: "byPost", fields: ["post_id"])
+  @key(name: "byParent", fields: ["parent_id"]){
+  id: ID!,
+  user_id:ID!
+  user: UserDetail @connection(fields:["user_id"])
+  post_id: ID!
+  post: Post! @connection(fields:["post_id"])
+  comment: String!
+  status: String!
+  type: String!
+  parent_id: ID
+  sub: [Comment] @connection(keyName:"byParent" fields:["id"])
+  replyUserID: ID
+  replyTo: UserDetail @connection(fields:["replyUserID"])
+}
+
+type PostReaction @model
+  @auth(rules: [
+    { allow: groups, groups: ["users"], operations: [read, update, create, delete]}
+    { allow: public, provider: iam, operations: [read]}
+  ])
+  @key(fields:["post_id","user_id"])
+  @key(name:"byPost", fields:["post_id"]){
+  post_id: ID!
+  user_id: ID!
+}
+
+type ReportedPost @model
+   @auth(rules: [
+    { allow: groups, groups: ["users"], operations: [read, update, create, delete]}
+    { allow: public, provider: iam, operations: [read]}
+  ]){
+  id: ID!
+  post: Post @connection
+  user: UserDetail @connection
+  type: ReportType @connection
+  reason: String!
+  status: String
+}
+
+type ReportType @model
+   @auth(rules: [
+    { allow: groups, groups: ["users"], operations: [read, update, create, delete]}
+    { allow: public, provider: iam, operations: [read]}
+  ]){
+  id: ID!
+  name: String!
+  status: String!
+  description: String
+}
+
+type GroupUsers @model
+  @auth(rules: [
+    { allow: groups, groups: ["users"], operations: [read, update, create, delete]}
+    { allow: public, provider: iam, operations: [read]}
+  ])
+  @key(fields: ["user_id","group_id"])
+  @key(name: "byUser", fields: ["user_id"])
+  @key(name: "byGroup", fields: ["group_id"], queryField:"getGroupUsersByGroup"){
+  id: ID!
+  user_id: ID!
+  user: UserDetail @connection(fields:["user_id"])
+  group_id: ID!
+  group: Group! @connection(fields:["group_id"])
+  role: String!
+}
+
+type Group @model
+  @auth(rules: [
+    { allow: groups, groups: ["users"], operations: [read, update, create, delete]}
+    { allow: public, provider: iam, operations: [read]}
+  ]){
+  id: ID!
+  name: String!
+  category_id: ID!
+  category: Category! @connection(fields: ["category_id"])
+  cover: File @connection
+  about: String
+  founder_id: ID!
+  founder: UserDetail @connection(fields:["founder_id"])
+  rating: Float
+  members: [GroupUsers] @connection(keyName:"byGroup", fields:["id"])
+}

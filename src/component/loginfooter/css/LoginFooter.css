@@ -1,0 +1,29 @@
+.footer {
+    border-top: 2px solid #4A4A4A33;
+    width: 100%;
+    padding: 20px 0;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer a{
+    text-align: center;
+    font: normal normal normal 16px/19px Montserrat;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+    text-decoration: none;
+}
+
+.footer .security {
+    border-left: solid 1px;
+    border-right: solid 1px;
+    border-color: #E5E5E5;
+    margin: 0 20px;
+    padding: 0 20px;
+}
+.footer a span{
+    color: #E5E5E5;
+    padding: 10px;
+}

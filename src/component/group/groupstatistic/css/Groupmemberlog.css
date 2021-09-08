@@ -1,0 +1,80 @@
+.memberlogOut{
+    position: relative;
+}
+.memberlogOut .groupsearch {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #989696;
+    border-radius: 6px;
+    padding-left: 1vw;
+    display: flex;
+    align-items: center;
+    margin: 3vh 0;
+    transition: box-shadow 0.1s ease-out;
+}
+
+.memberlogOut .groupsearch:focus-within {
+    box-shadow: 0 0 5px #666666;
+}
+
+.memberlogOut .groupsearch>i.fa-search {
+    font-size: 26px;
+    color: #666666;
+}
+
+.memberlogOut .groupsearch>input[type="text"] {
+    border: none;
+    outline: none;
+    flex: 1 1 auto;
+    font: normal normal 500 20px/24px Montserrat;
+    height: 100%;
+    margin: 1vh;
+}
+.memberlogOut .memberlogIn .select{
+    position: absolute;
+    right: 30px;
+    top: 115px;
+    width: 25%;
+}
+
+.memberlogOut .memberlogIn{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border: 1px solid #70707033;
+    border-radius: 6px;
+}
+.memberlogOut .memberlogIn h1{
+    text-align: center;
+    font: normal normal 600 27px/33px Montserrat;
+    letter-spacing: 0px;
+    color: #000000;
+    padding: 20px 0;
+}
+.memberlogOut .memberlogIn .headers{
+    text-align: right;
+    border-bottom: 1px solid #70707033;
+}
+.memberlogOut .memberlogIn .headers span{
+    font: normal normal 600 20px/24px Montserrat;
+    letter-spacing: 0px;
+    color: #000000;
+    padding: 10px 30px;
+}
+.memberlogOut .memberlogIn .memberlogInsi img{
+    box-shadow: 0px 0px 6px #00000029;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+}
+.memberlogOut .memberlogIn .memberlogInsi{
+    margin: 20px 0;
+    text-align: center;
+    font: normal normal 500 16px/19px Montserrat;
+    letter-spacing: 0px;
+    color: #000000;
+    display: flex;
+    justify-content: space-evenly;
+}
+.memberlogOut .memberlogIn .memberlogInsi span{
+    margin: 10px 0 0;
+    padding: 0 30px;
+}

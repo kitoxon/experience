@@ -1,0 +1,276 @@
+.UserConfig-wrapper {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center; 
+    gap: 1.75vw;
+    padding-top: 5vh;
+}
+
+.UserConfig-wrapper .left-side {
+    width: 861px;
+}
+
+.UserConfig-wrapper .right-side {
+    width: 334px;
+}
+
+.UserConfig-wrapper .UserConfig-main-window .UserConfig-main-wrapper {
+    width: 100%;
+    opacity: 1;
+}
+
+.UserConfig-wrapper .UserConfig-main-window .UserConfig-main-wrapper .dual-textfield {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.UserConfig-wrapper .UserConfig-main-window .UserConfig-main-wrapper .user-personal-info .user-personal-header{
+    border-bottom: solid;
+    border-width: 1px;
+    border-color: #70707033;
+}
+.UserConfig-wrapper .UserConfig-main-window .UserConfig-main-wrapper .user-personal-info .user-personal-header h4 {
+    margin: 0;
+    font: normal normal 700 20px/24px Montserrat;
+    letter-spacing: 0px;
+    color: #000000;
+    border-bottom: solid;
+    border-width: 4px;
+    width: 190px;
+    padding-bottom: 15px;
+}
+.UserConfig-wrapper .UserConfig-main-window .UserConfig-main-wrapper .user-contact-info .user-contact-header{
+    border-bottom: solid;
+    border-width: 1px;
+    border-color: #70707033;
+}
+.UserConfig-wrapper .UserConfig-main-window .UserConfig-main-wrapper .user-contact-info .user-contact-header h4 {
+    margin: 0;
+    font: normal normal 700 20px/24px Montserrat;
+    letter-spacing: 0px;
+    color: #000000;
+    border-bottom: solid;
+    border-width: 4px;
+    width: 155px;
+    padding-bottom: 15px;
+}
+.UserConfig-wrapper .UserConfig-main-window .UserConfig-main-wrapper .user-privacy .user-privacy-header{
+    border-bottom: solid;
+    border-width: 1px;
+    border-color: #70707033;
+}
+.UserConfig-wrapper .UserConfig-main-window .UserConfig-main-wrapper .user-privacy .user-privacy-header h4{
+    margin: 0;
+    font: normal normal 700 20px/24px Montserrat;
+    letter-spacing: 0px;
+    color: #000000;
+    border-bottom: solid;
+    border-width: 4px;
+    width: 95px;
+    padding-bottom: 15px;
+}
+
+
+.UserConfig-wrapper .UserConfig-main-window .UserConfig-main-wrapper .UserConfig-header {
+    height: 62px;
+    padding: 0 1.719vw;
+}
+
+.UserConfig-wrapper .UserConfig-main-window .UserConfig-main-wrapper .UserConfig-header h3 {
+    height: calc(100% - 22px);
+    margin: 0;
+    padding-top: 18px;
+    text-align: center;
+    font: normal normal 700 20px/24px Montserrat;
+    letter-spacing: 0px;
+    color: #000000;
+    
+}
+
+.UserConfig-wrapper .UserConfig-main-window .UserConfig-main-wrapper .user-personal-info {
+    padding: 26px 1.719vw 33px;
+    border-bottom: solid;
+    border-width: 1px;
+    border-color: #70707033;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #70707033;
+    border-radius: 6px;
+    margin-top: 30px;
+}
+
+.UserConfig-wrapper .UserConfig-main-window .UserConfig-main-wrapper label {
+    margin: 27px 0 10px;
+}
+
+.UserConfig-wrapper .left-side .UserConfig-main-window .UserConfig-main-wrapper .dashboard-nav {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+    font: normal normal 600 20px/24px Montserrat;
+    letter-spacing: 0px;
+    color: #000000;
+    border-top: 1px solid #70707033;
+    border-bottom: 1px solid #70707033;
+}
+
+.UserConfig-wrapper .left-side .UserConfig-main-window .UserConfig-main-wrapper .dashboard-nav p {
+    padding-bottom: 7px;
+    opacity: 0.4;
+    cursor: pointer;
+}
+
+.UserConfig-wrapper .left-side .UserConfig-main-window .UserConfig-main-wrapper .dashboard-nav p:hover {
+    opacity: 1;
+}
+
+.UserConfig-wrapper .left-side .UserConfig-main-window .UserConfig-main-wrapper .dashboard-nav p.active-link {
+    border-bottom: 3px solid #000;
+    box-sizing: border-box;
+    opacity: 1;
+    cursor: text;
+}
+.UserConfig-wrapper .UserConfig-main-window .UserConfig-main-wrapper .user-personal-info .textFieldWithLabel-wrapper .textField-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #70707033;
+    border-radius: 7px;
+    opacity: 1;
+    padding-left: 10px;
+    font: normal normal 500 20px/24px Montserrat;
+}
+
+.UserConfig-wrapper .UserConfig-main-window .UserConfig-main-wrapper .user-personal-info .textFieldWithLabel-wrapper .textField-wrapper>input {
+    outline: none;
+    border: none;
+    padding-left: 3px;
+}
+
+.UserConfig-wrapper .UserConfig-main-window .UserConfig-main-wrapper .user-personal-info .textFieldWithLabel-wrapper .textField-wrapper>p {
+    margin: 0;
+}
+.UserConfig-wrapper .UserConfig-main-window .UserConfig-main-wrapper .user-contact-info {
+    padding: 26px 1.719vw 33px;
+    border-bottom: solid;
+    border-width: 1px;
+    border-color: #70707033;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #70707033;
+    border-radius: 6px;
+    margin-top: 30px;
+}
+
+.UserConfig-wrapper .UserConfig-main-window .UserConfig-main-wrapper .user-contact-info .dual-textfield .textFieldWithLabel-wrapper input {
+    width: 344px;
+}
+
+.UserConfig-wrapper .UserConfig-main-window .UserConfig-main-wrapper .textFieldWithLabel-wrapper input[type="text"] {
+    margin: 9px 0;
+}
+
+.UserConfig-wrapper .UserConfig-main-window .UserConfig-main-wrapper .textAreaWithLabel-wrapper textarea {
+    margin: 9px 0;
+}
+
+.UserConfig-wrapper .UserConfig-main-window .UserConfig-main-wrapper .user-privacy {
+    padding: 26px 1.719vw 65px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #70707033;
+    border-radius: 6px;
+    margin-top: 30px;
+}
+
+.UserConfig-wrapper .UserConfig-main-window .UserConfig-main-wrapper .user-privacy .user-privacy-selection {
+    margin: 27px 0;
+}
+
+.UserConfig-wrapper .UserConfig-main-window .UserConfig-main-wrapper .user-privacy .user-privacy-selection i.fas {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.UserConfig-wrapper .UserConfig-main-window .UserConfig-main-wrapper .user-privacy .user-privacy-checkbox {
+    font: normal normal 600 20px/24px Montserrat;
+    padding-right: 40px;
+    margin: 20px 0 20px 10px;
+}
+
+.UserConfig-wrapper .UserConfig-main-window .UserConfig-main-wrapper .user-privacy .user-privacy-checkbox input[type="checkbox"] {
+    float: right;
+    width: 20px;
+    height: 20px;
+    outline-color: #000;
+}
+
+.UserConfig-wrapper .UserConfig-main-window .UserConfig-main-wrapper .user-privacy .user-forgot-password {
+    float: right;
+    margin: 5px 10px;
+    font: normal normal 600 16px/19px Montserrat;
+    text-decoration: underline;
+    color: #000000;
+    cursor: pointer;
+}
+
+.UserConfig-wrapper .UserConfig-main-window .UserConfig-main-wrapper .UserConfig-footer {
+    border-top: solid;
+    border-width: 1px;
+    border-color: #70707033;
+    padding: 10px 1.719vw 10px;
+    text-align: center;
+}
+
+.UserConfig-wrapper .UserConfig-main-window .UserConfig-main-wrapper .UserConfig-footer .user-delete-profile {
+    font: normal normal 500 20px/24px Montserrat;
+    text-decoration: underline;
+    letter-spacing: 0px;
+    color: #262626;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.UserConfig-wrapper .UserConfig-main-window .user-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 5px 50px;
+}
+
+.UserConfig-wrapper .UserConfig-main-window .user-buttons>.roundedButton-wrapper {
+    width: 200px;
+    border-radius: 3px;
+    font: normal normal 600 19px/23px Montserrat;
+    padding: 10px;
+    margin: 20px 0;
+}
+
+@media screen and (max-width: 600px) {
+    .UserConfig-wrapper .left-side {
+        width: 100vw;
+    }
+    .UserConfig-wrapper .UserConfig-main-window .user-buttons {
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 900px) {
+    .UserConfig-wrapper .UserConfig-main-window .UserConfig-main-wrapper .user-personal-info{
+        margin: 30px 50px;
+    }
+    .UserConfig-wrapper .UserConfig-main-window .UserConfig-main-wrapper .user-privacy{
+        margin: 30px 50px;
+    }
+    .UserConfig-wrapper .UserConfig-main-window .UserConfig-main-wrapper .user-contact-info{
+        margin: 30px 50px;
+    }
+}
+@media screen and (max-width: 460px){
+    .UserConfig-wrapper .UserConfig-main-window .UserConfig-main-wrapper .user-contact-info .dual-textfield .textFieldWithLabel-wrapper input {
+        width: 100%;
+    }
+}

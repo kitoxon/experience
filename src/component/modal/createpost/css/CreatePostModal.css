@@ -1,0 +1,405 @@
+.CreatePostModal-wrapper {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.CreatePostModal-wrapper .modal-content {
+    width: 60vw;
+    min-width: 620px;
+    background-color: #F6F6F6;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 4px;
+}
+
+.CreatePostModal-wrapper .modal-content .modal-header {
+    padding: 1.8vh;
+    font: normal normal 500 25px/30px Montserrat;
+    text-align: center;
+    color: #262626;
+}
+
+.CreatePostModal-wrapper .modal-content .modal-header i.fas {
+    font-size: 22px;
+    margin-top: 6px;
+    cursor: pointer;
+    float: right;
+}
+
+.CreatePostModal-wrapper .modal-content .modal-body {
+    border-top: 1px solid #70707033;
+    border-bottom: 1px solid #70707033;
+    text-align: center;
+    padding: 8.333vh 3vw;
+}
+
+.CreatePostModal-wrapper .modal-content .modal-body i.fa-photo-video {
+    font-size: 154px;
+    margin: auto;
+}
+
+.CreatePostModal-wrapper .modal-content .modal-body p.modal-desc {
+    font: normal normal 500 22px/27px Montserrat;
+    color: #000000;
+    opacity: 0.39;
+}
+
+.CreatePostModal-wrapper .modal-content .modal-body button.modal-button {
+    width: 151px;
+    height: 37px;
+    background: #333333 0% 0% no-repeat padding-box;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font: normal normal 400 14px/18px Montserrat;
+    color: #FFFFFF;
+}
+
+.CreatePostModal-wrapper .modal-content .modal-body button.modal-button:hover {
+    opacity: 0.7;
+}
+
+.CreatePostModal-wrapper .modal-content .modal-footer {
+    padding: 18px;
+}
+
+.CreatePostModal-wrapper .modal-content .modal-footer button {
+    font: normal normal normal 14px/18px Montserrat;
+    color: #FFFFFF;
+    border-radius: 3px;
+    cursor: pointer;
+    border: none;
+    padding: 0.833vh 20px;
+}
+
+.CreatePostModal-wrapper .modal-content .modal-footer button:hover {
+    opacity: 0.7;
+}
+
+.CreatePostModal-wrapper .modal-content .modal-footer button:disabled {
+    cursor: default;
+    opacity: 0.45;
+}
+
+.CreatePostModal-wrapper .modal-content .modal-footer button.modal-closebutton {
+    background: #333333 0% 0% no-repeat padding-box;
+}
+
+.CreatePostModal-wrapper .modal-content .modal-footer button.modal-insertbutton {
+    background: #666666 0% 0% no-repeat padding-box;
+    float: right;
+}
+
+.CreatePostModal-wrapper .modal-content .modal-footer .status-icon{
+    float: right;
+    height: calc(18px + 0.833vh * 2);
+    display: flex;
+    align-items: center;
+    gap: 0.5vw;
+    margin-right: 0.5vw;
+}
+
+.CreatePostModal-wrapper .modal-content .modal-footer .status-icon p {
+    margin: 0;
+    font: normal normal normal 14px/18px Montserrat;
+    color: red;
+}
+
+.CreatePostModal-wrapper .modal-content .modal-footer .status-icon i{
+    font-size: 24px;
+}
+
+.CreatePostModal-wrapper .modal-content .modal-footer .status-icon i.spinner {
+    animation: spin 2s linear infinite;
+}
+
+.CreatePostModal-wrapper .modal-content .modal-footer button.modal-dropdown {
+    float: right;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 1px;
+    background: #666666 0% 0% no-repeat padding-box;
+}
+
+.CreatePostModal-wrapper .modal-content .modal-editor {
+    border-top: 1px solid #70707033;
+    border-bottom: 1px solid #70707033;
+    padding: 2vh 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    height: 520px;
+}
+
+.CreatePostModal-wrapper .modal-content .modal-editor .editor-image-section {
+    flex: 1 1 auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 1.5vh;
+}
+
+.CreatePostModal-wrapper .modal-content .modal-editor .editor-image-wrapper {
+    text-align: center;
+    position: relative;
+    flex: 1 1 auto;
+    overflow: hidden;
+}
+
+.CreatePostModal-wrapper .modal-content .modal-editor .editor-image-wrapper .inline-helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.CreatePostModal-wrapper .modal-content .modal-editor .editor-image-wrapper .editor-feature-image {
+    max-height: 100%;
+    width: auto;
+    max-width: calc(100% - 10vw);
+    vertical-align: middle;
+}
+
+.CreatePostModal-wrapper .modal-content .modal-editor .editor-selection {
+    display: flex;
+    column-gap: 10px;
+    row-gap: 5px;
+    text-align: center;
+    flex-wrap: wrap;
+    padding: 0 2vw;
+    flex: 0 0 auto;
+    pointer-events: none;
+    overflow-y: auto;
+    max-height: 300px;
+}
+
+.CreatePostModal-wrapper .modal-content .modal-editor .editor-selection .thumbnail-wrapper {
+    display: inline-flex;
+    border-radius: 5px;
+    width: 110px;
+    height: 90px;
+    margin: 4px;
+    box-sizing: border-box;
+    border: 1px solid #838383;
+    flex: 0 0 auto;
+    pointer-events: all;
+}
+
+.CreatePostModal-wrapper .modal-content .modal-editor .editor-selection .thumbnail-wrapper .thumb{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.CreatePostModal-wrapper .modal-content .modal-editor .editor-selection .thumbnail-wrapper i.fa-times-circle {
+    height: 0;
+    width: 0;
+    overflow: visible;
+    z-index: 9999;
+    color: #fff;
+    transform: translateX(90px) translateY(2px);
+    cursor: pointer;
+}
+
+.CreatePostModal-wrapper .modal-content .modal-editor .editor-selection .thumbnail-wrapper i.fa-times-circle:hover {
+    color: #a8a8a8;
+}
+
+.CreatePostModal-wrapper .modal-content .modal-editor .editor-selection .thumbnail-wrapper i.fa-star {
+    height: 0;
+    width: 0;
+    overflow: visible;
+    z-index: 9999;
+    color: #919191;
+    transform: translateX(2px) translateY(2px);
+    cursor: pointer;
+}
+
+.CreatePostModal-wrapper .modal-content .modal-editor .editor-selection .thumbnail-wrapper i.fa-star:hover,  .CreatePostModal-wrapper .modal-content .modal-editor .editor-selection .thumbnail-wrapper i.fa-star.active {
+    color: #ffd900;
+}
+
+.CreatePostModal-wrapper .modal-content .modal-editor .editor-selection .thumbnail-wrapper:hover {
+    border: solid 1px #000;
+}
+
+.CreatePostModal-wrapper .modal-content .modal-editor .editor-image-section .editor-image-wrapper .editor-plus-wrapper {
+    float: right;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-right: 2vw;
+}
+
+.CreatePostModal-wrapper .modal-content .modal-editor .editor-image-section .editor-image-wrapper i.fa-plus-square {
+    font-size: 55px;
+    cursor: pointer;
+    float: right;
+    pointer-events: all;
+}
+
+.CreatePostModal-wrapper .modal-content .modal-editor .editor-image-section .editor-image-wrapper i.fa-plus-square:hover {
+    opacity: 0.6;
+}
+
+.CreatePostModal-wrapper .modal-content .modal-editor .editor-desc-wrapper {
+    height: 100%;
+    padding: 0 1.875vw;
+    border-left: 1px solid #70707033;
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5vh;
+}
+
+.CreatePostModal-wrapper .modal-content .modal-editor .editor-desc-wrapper #editor-subject.error {
+    outline: 2px solid #e77572;
+}
+
+.CreatePostModal-wrapper .modal-content .modal-editor .editor-desc-wrapper textarea {
+    width: 13.438vw;
+    min-width: 170px;
+    height: 12vh;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #70707033;
+    border-radius: 9px;
+    opacity: 1;
+    resize: none;
+    font: normal normal 400 14px/16px Montserrat;
+    padding: 1.3vh 1vw;
+    word-wrap: break-word;
+}
+
+.CreatePostModal-wrapper .modal-content .modal-editor .editor-desc-wrapper .editor-group-selection {
+    width: 15.5vw;
+    position: relative;
+}
+
+.CreatePostModal-wrapper .modal-content .modal-editor .editor-desc-wrapper .editor-group-selection p{
+    max-width: 80%;
+}
+
+.CreatePostModal-wrapper .modal-content .modal-editor .editor-desc-wrapper .editor-group-selection .editor-selection-button {
+    display: flex;
+    align-items: center;
+    font: normal normal 600 13px/15px Montserrat;
+    color: #262626;
+    background: #F9F9F9 0% 0% no-repeat padding-box;
+    border: 1px solid #70707033;
+    border-radius: 6px;
+    height: 38px;
+    padding: 0 0.5vw;
+    position: relative;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+
+.CreatePostModal-wrapper .modal-content .modal-editor .editor-desc-wrapper .editor-group-selection .editor-selection-button.active {
+    outline: 2px solid #7ab2fc;
+}
+
+.CreatePostModal-wrapper .modal-content .modal-editor .editor-desc-wrapper .editor-group-selection .editor-selection-button.error {
+    outline: 2px solid #cc6464;
+}
+
+.CreatePostModal-wrapper .modal-content .modal-editor .editor-desc-wrapper .editor-group-selection .editor-selection-button i {
+    font-size: 20px;
+    color: #a3a3a3;
+    margin-right: 10px;
+    width: 22px;
+    text-align: center;
+}
+
+.CreatePostModal-wrapper .modal-content .modal-editor .editor-desc-wrapper .editor-group-selection .editor-selection-button i.fa-chevron-down {
+    font-size: 20px;
+    position: absolute;
+    right: 10px;
+}
+
+.CreatePostModal-wrapper .modal-content .modal-editor .editor-desc-wrapper .editor-group-selection .group-selection-menu {
+    position: absolute;
+    border: 1px solid #70707033;
+    border-radius: 6px;
+    width: calc(100% - 2px);
+    max-height: 28vh;
+    overflow-y: auto;
+    background-color: #ffffff;
+}
+
+.CreatePostModal-wrapper .modal-content .modal-editor .editor-desc-wrapper .editor-group-selection .group-selection-menu .group-divider {
+    height: 25px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #dbdbdb;
+}
+
+.CreatePostModal-wrapper .modal-content .modal-editor .editor-desc-wrapper .editor-group-selection .group-selection-menu .group-selection-item {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    background: #F9F9F9 0% 0% no-repeat padding-box;
+    border-top: 1px solid #70707033;
+    position: relative;
+    padding-left: 0.5vw;
+    font: normal normal 600 13px/15px Montserrat;
+}
+
+.CreatePostModal-wrapper .modal-content .modal-editor .editor-desc-wrapper .editor-group-selection .group-selection-menu .group-selection-item>i {
+    width: 20px;
+    margin-right: 1vw;
+    text-align: center;
+    font-size: 16px;
+}
+
+.CreatePostModal-wrapper .modal-content .modal-editor .editor-desc-wrapper .editor-group-selection .group-selection-menu .group-selection-item:hover {
+    background-color: #e9e9e9;
+}
+
+.CreatePostModal-wrapper .modal-content .modal-editor .editor-desc-wrapper .editor-group-selection .group-selection-menu .group-button {
+    position: absolute;
+    right: 10px;
+    font: normal normal 500 11px/18px Montserrat;
+    padding: 0 5px;
+    text-align: center;
+    border: 1px solid #262626;
+    border-radius: 3px;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+    cursor: pointer;
+}
+
+.CreatePostModal-wrapper .modal-content .modal-editor .editor-desc-wrapper .editor-group-selection .group-selection-menu .group-button {
+    background-color: #262626;
+    color: #ffffff;
+}
+
+.CreatePostModal-wrapper .modal-content .modal-editor .editor-desc-wrapper .editor-group-selection .group-selection-menu .group-button:hover {
+    background-color: #ffffff;
+    color: #262626;
+}
+
+.CreatePostModal-wrapper .modal-content .modal-editor .editor-desc-wrapper .editor-group-selection .group-selection-menu .group-selection-item p {
+    margin: 0;
+    cursor: default;
+    width: 50%;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

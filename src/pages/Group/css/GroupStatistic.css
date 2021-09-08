@@ -1,0 +1,55 @@
+.GroupStatistic-wrapper {
+    margin: auto;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 2vw;
+}
+
+.GroupStatistic-wrapper .left-side {
+    height: 1000px;
+    flex: 1 1 auto;
+    margin-top: 5.9vh;
+}
+
+.GroupStatistic-wrapper .left-side .title {
+    width: 100%;
+    text-align: center;
+    font: normal normal bold 20px/24px Montserrat;
+}
+
+.GroupStatistic-wrapper .left-side .dashboard-nav {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3vw;
+    font: normal normal 500 20px/24px Montserrat;
+    border-bottom: 1px solid #70707033;
+    border-top: 1px solid #70707033;
+}
+
+.GroupStatistic-wrapper .left-side .dashboard-nav p {
+    padding-bottom: 7px;
+    opacity: 0.4;
+    cursor: pointer;
+}
+
+.GroupStatistic-wrapper .left-side .dashboard-nav p:hover {
+    opacity: 1;
+}
+
+.GroupStatistic-wrapper .left-side .dashboard-nav p.active-link {
+    border-bottom: 3px solid #000;
+    box-sizing: border-box;
+    opacity: 1;
+    cursor: text;
+}
+
+.GroupStatistic-wrapper .right-side {
+    width: 17.396vw;
+    min-width: 240px;
+    margin-top: 4.26vh;
+    flex: 0 0 auto;
+}

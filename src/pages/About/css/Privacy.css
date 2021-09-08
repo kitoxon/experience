@@ -1,0 +1,75 @@
+.Privacy-wrapper {
+    width: 62.5vw;
+    min-width: 300px;
+    margin: auto;
+    margin-top: 2vh;
+}
+
+.Privacy-wrapper .Privacy-header {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #70707033;
+    padding: 4vh 0;
+}
+
+.Privacy-wrapper .Privacy-header h2 {
+    font: normal normal 600 41px/50px Montserrat;
+    margin: 0;
+}
+
+.Privacy-wrapper .Privacy-main {
+    display: flex;
+}
+
+.Privacy-wrapper .Privacy-main .side-nav {
+    flex: 0 0 calc(18% - 0.75vw);
+    border-right: 1px solid #77777733;
+    padding: 2.25vh 0.75vw;
+}
+
+.Privacy-wrapper .Privacy-main .side-nav .select-wrapper {
+    width: calc(100% - 2vw);
+}
+
+.Privacy-wrapper .Privacy-main .side-nav .nav-button {
+    width: 100%;
+    text-align: end;
+    display: flex;
+    align-items: center;
+    margin-top: 2.5vh;
+}
+
+.Privacy-wrapper .Privacy-main .side-nav .nav-button p {
+    font: normal normal 600 18px/22px Montserrat;
+    color: #989696;
+    margin: 0;
+    cursor: pointer;
+}
+
+.Privacy-wrapper .Privacy-main .side-nav .nav-button p:hover {
+    color: #bababa;
+}
+
+.Privacy-wrapper .Privacy-main .side-nav .nav-button i {
+    font-size: 21px;
+    text-align: end;
+    flex: 0 0 1.65vw;
+    padding-right: 0.35vw;
+    opacity: 0;
+}
+
+.Privacy-wrapper .Privacy-main .side-nav .nav-button.active-button p{
+    color: #000;
+    cursor: text;
+}
+
+.Privacy-wrapper .Privacy-main .side-nav .nav-button.active-button i{
+    opacity: 1;
+}
+
+.Privacy-wrapper .Privacy-main .Privacy-body {
+    margin: 2vh 2vw;
+    font: normal normal 400 18px/25px Montserrat;
+    text-align: center;
+}
+

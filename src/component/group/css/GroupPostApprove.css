@@ -1,0 +1,213 @@
+.postModal-out {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #00000055;
+    z-index: 9999;
+    position: fixed;
+}
+.postModal-out .postModal-in{
+    width: 96%;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 6px;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center; 
+    gap: 80px;
+    height: 93%;
+    padding: 50px 0;
+}
+
+.postModal-out .postModal-in .left-side {
+    width: 30%;
+    position: relative;
+}
+.postModal-out .postModal-in .left-side .button{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+.postModal-out .postModal-in .left-side .button .approve{
+    background: #1BA741;
+    border-radius: 3px;
+    text-align: center;
+    font: normal normal 600 19px/23px Montserrat;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    width: 256px;
+    height: 40px;   
+}
+.postModal-out .postModal-in .left-side .button .delete{
+    background: #FF0000 0% 0% no-repeat padding-box;
+    border-radius: 3px;
+    text-align: center;
+    font: normal normal 600 19px/23px Montserrat;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    width: 256px;
+    height: 40px;   
+}
+.postModal-out .postModal-in .left-side h2{
+    font: normal normal bold 38px/44px Times New Roman;
+    letter-spacing: 0px;
+    color: #000000;
+}
+.postModal-out .postModal-in .left-side .postModal-header{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+}
+.postModal-out .postModal-in .left-side .postModal-header .groupProfile img{
+    width: 101px;
+    height: 101px;
+    border-radius: 50%;
+    box-shadow: 0px 3px 6px #00000029;
+}
+.postModal-out .postModal-in .left-side .postModal-header .groupProfile img.userprofile{
+    width: 51px;
+    height: 51px;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: 50px;
+    margin-left: -40px;
+    box-shadow: 0px 0px 12px #00000029;
+}
+.postModal-out .postModal-in .left-side .postModal-header .info{
+    margin-left: 20px;
+}
+.postModal-out .postModal-in .left-side .postModal-header .info h1{
+    font: normal normal bold 49px/59px Montserrat;
+    letter-spacing: 0px;
+    color: #000000;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+.postModal-out .postModal-in .left-side .postModal-header .info span{
+    font: normal normal normal 23px/28px Montserrat;
+    letter-spacing: 0px;
+    color: #000000;
+}
+.postModal-out .postModal-in .left-side .postModal-header .info span i{
+    border-radius: 5px;
+    font-size: 26px;
+    color: green;
+}
+.postModal-out .postModal-in .left-side .comment{
+    background: #F6F6F6 0% 0% no-repeat padding-box;
+    border: 1px solid #70707033;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+.postModal-out .postModal-in .left-side .comment .User{
+    display: flex;
+    flex-direction: row;
+}
+.postModal-out .postModal-in .left-side .comment .User img{
+    width: 51px;
+    height: 51px;
+    border-radius: 50%;
+    margin: 20px 20px 0;
+}
+.postModal-out .postModal-in .left-side .comment .User .info h3{
+    margin-bottom: 0px;
+    font: normal normal 600 20px/24px Montserrat;
+    letter-spacing: 0px;
+    color: #000000;
+}
+.postModal-out .postModal-in .left-side .comment .User .info span{
+    font: normal normal normal 18px/22px Montserrat;
+    letter-spacing: -1.33px;
+    color: #707070;
+}
+.postModal-out .postModal-in .left-side .comment p{
+    font: normal normal normal 20px/27px Times New Roman;
+    letter-spacing: 0px;
+    color: #000000;
+    padding: 0 20px;
+}
+.postModal-out .postModal-in .left-side .comment-write .sent-comment{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #70707033;
+    border-radius: 25px;
+    height: 50px;
+    outline: none;
+    position: relative;
+}
+.postModal-out .postModal-in .left-side .comment-write .sent-comment textarea{
+    width: 60%;
+    height: 35px;
+    margin-left: 12px;
+    margin-top: 5px;
+    border: none;
+    font: normal normal normal 22px/26px Times New Roman;
+    overflow: auto;
+}
+.postModal-out .postModal-in .left-side .comment-write .sent-comment textarea::placeholder{
+    font: normal normal normal 22px/26px Times New Roman;
+    letter-spacing: 0px;
+    color: #989696;
+    padding-top: 5px;
+}
+.postModal-out .postModal-in .left-side .comment-write .sent-comment textarea:focus{
+    border-color: inherit;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: none;
+}
+.postModal-out .postModal-in .left-side .comment-write .sent-comment .comment-icons{
+    position: absolute;
+    font-size: 31px;
+    right: 0;
+    bottom: 5px;
+}
+.postModal-out .postModal-in .left-side .comment-write .comment-icons i{
+    padding: 0 10px;
+}
+
+.postModal-out .postModal-in .right-side {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 40%;
+}
+.postModal-out .postModal-in .right-side img{
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    max-height: 842px;
+}
+.postModal-out .postModal-in .right-side .right-icons{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    font-size: 57px;
+    right: -80px;
+}
+.postModal-out .postModal-in .right-side .right-icons span{
+    font: normal normal bold 20px/24px Montserrat;
+    letter-spacing: 0px;
+    color: #000000;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+
+.postModal-out .postModal-in .right-side .thumbs{
+    display: none;
+}
+
+.postModal-out .postModal-in .right-side .carousel .control-next.control-arrow:before {
+    border-left: 12px solid #fff;
+}
+.postModal-out .postModal-in .right-side .carousel .control-prev.control-arrow:before {
+    border-right: 12px solid #fff;
+}

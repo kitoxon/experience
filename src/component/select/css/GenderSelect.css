@@ -1,0 +1,75 @@
+.selectgender {
+    user-select: none;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.selectgender .genders {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+
+
+.selectgender p{
+    font-size: 16px;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+    font: normal normal 500 14px/19px Montserrat;
+}
+
+.selectgender .genders label{
+    width: 30%;
+    height: 76px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #66666633;
+    border-radius: 6px;
+    opacity: 1;
+    cursor: pointer;
+}
+
+
+.selectgender .genders label>span{
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+
+.selectgender .genders label:hover{
+    background-color: black;
+    color: white;
+}
+.selectgender .genders label:hover i{
+    background-color: black;
+    color: white;
+}
+
+.selectgender input[type="radio"]{
+    -webkit-appearance: none;
+}
+
+.selectgender input[type="radio"]:checked + label{
+    background-color: black;
+    color: white;
+}
+.selectgender input[type="radio"]:checked + label{
+    background-color: black;
+    color: white;
+}
+
+.selectgender input[type="radio"]:checked + label>i {
+    color: white;
+}
+
+@media screen and(max-width: 400px) {
+    .selectgender .genders label{
+        width: 40%;
+    }
+    
+}

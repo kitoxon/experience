@@ -1,0 +1,165 @@
+.aboutModal-wrapper {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.aboutModal-wrapper .modal-content .square-modal {
+    display: inline-block;
+    overflow: hidden;
+    background: #F6F6F6 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 4px;
+    width: 160px;
+    height: 160px;
+    text-align: center;
+    font: normal normal 600 18px/20px Montserrat;
+    padding: 20px;
+    transition: all 0.1s;
+}
+
+.aboutModal-wrapper .modal-content .square-modal i {
+    font-size: 72px;
+    background: -webkit-linear-gradient(rgb(243, 110, 150), rgb(185, 75, 102));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 20px;
+    transition: all 0.1s;
+}
+
+.aboutModal-wrapper .modal-content .square-modal:hover {
+    background: #262626 0% 0% no-repeat padding-box;
+    color: #fff;
+    cursor: pointer;
+}
+
+.aboutModal-wrapper .modal-content .square-modal:hover i {
+    color: #fff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #fff;
+}
+
+.aboutModal-wrapper .modal-content .square-modal.disabled-square {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.aboutModal-wrapper .modal-content .aura-square {
+    transition: transform 0.3s, opacity 0.4s, visibility 0.4s;
+    margin-right: 10vw;
+}
+
+.aboutModal-wrapper .modal-content .member-square {
+    transition:  transform 0.4s, opacity 0.3s, visibility 0.3s;
+}
+
+.aboutModal-wrapper .modal-content .aura-square.active-square {
+    transform: translateX(calc(-10vw));
+}
+
+.aboutModal-wrapper .modal-content .member-square.active-square {
+    transform: translateX(calc(-20vw - 100%));
+}
+
+.aboutModal-wrapper .modal-content .text-content {
+    visibility: hidden;
+    background: #F6F6F6 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 4px;
+    opacity: 0;
+    position: absolute;
+    width: 43vw;
+    height: 90vh;
+    left: 40%;
+    top: 50%;
+    transform: translateY(-50%);
+    min-width: 350px;
+    min-height: 350px;
+    transition: all 0.3s ease-in-out;
+    padding: 0 2vw;
+}
+
+.aboutModal-wrapper .modal-content .text-content.active-content {
+    display: inline-block;
+    opacity: 1;
+    visibility: visible;
+}
+
+.aboutModal-wrapper .modal-content .text-content .aboutText-header {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #70707033;
+    padding: 2.5vh 0;
+}
+
+.aboutModal-wrapper .modal-content .text-content .aboutText-header h2 {
+    font: normal normal 600 41px/50px Montserrat;
+    margin: 0;
+}
+
+.aboutModal-wrapper .modal-content .text-content .aboutText-main {
+    display: flex;
+    flex-direction: row;
+    height: calc(100% - 15vh);
+}
+
+.aboutModal-wrapper .modal-content .text-content .aboutText-main .side-nav {
+    flex: 0 0 calc(18% - 0.75vw);
+    border-right: 1px solid #77777733;
+    padding: 2.25vh 0.75vw;
+}
+
+.aboutModal-wrapper .modal-content .text-content .aboutText-main .side-nav .select-wrapper {
+    width: 100%;
+}
+
+.aboutModal-wrapper .modal-content .text-content .aboutText-main .side-nav .nav-button {
+    width: 100%;
+    text-align: end;
+    display: flex;
+    align-items: center;
+    margin-top: 2.5vh;
+}
+
+.aboutModal-wrapper .modal-content .text-content .aboutText-main .side-nav .nav-button p {
+    font: normal normal 600 16px/20px Montserrat;
+    color: #989696;
+    margin: 0;
+    cursor: pointer;
+}
+
+.aboutModal-wrapper .modal-content .text-content .aboutText-main .side-nav .nav-button p:hover {
+    color: #bababa;
+}
+
+.aboutModal-wrapper .modal-content .text-content .aboutText-main .side-nav .nav-button i {
+    font-size: 21px;
+    text-align: end;
+    flex: 0 0 1.65vw;
+    padding-right: 1vw;
+    opacity: 0;
+}
+
+.aboutModal-wrapper .modal-content .text-content .aboutText-main .side-nav .nav-button.active-button p{
+    color: #000;
+    cursor: text;
+}
+
+.aboutModal-wrapper .modal-content .text-content .aboutText-main .side-nav .nav-button.active-button i{
+    opacity: 1;
+}
+
+.aboutModal-wrapper .modal-content .text-content .aboutText-main .aboutText-body {    
+    overflow-y: scroll;
+    padding: 2vh 2vw;
+    height: calc(100% - 2vh);
+    font: normal normal 400 17px/25px Montserrat;
+    text-align: center;
+}

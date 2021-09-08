@@ -1,0 +1,71 @@
+.bottomOutDiv {
+    width: 100%;
+}
+.bottomOutDiv .bottomInDiv{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 6px #00000029;
+    border: 1px solid #70707033;
+    border-radius: 8px;
+}
+.bottomOutDiv .bottomInDiv .bottomInnerDiv {
+    display: flex;
+    justify-content: row;
+}
+.bottomOutDiv .bottomInDiv .bottomInnerDiv ul{
+    text-align: left;
+    font: italic normal normal 13px/17px PT Sans;
+    letter-spacing: 0px;
+    color: #000000;
+    margin: 10px;
+}
+.bottomOutDiv .bottomInDiv .bottomInnerDiv ul li{
+    margin: 10px 0;
+}
+.bottomOutDiv .bottomInDiv .User-social-wrapper {
+    margin: 5px 24px;
+}
+
+.bottomOutDiv .bottomInDiv .User-social-wrapper div {
+    text-align: center;
+    font-size: 15px;
+    height: 24px;
+    width: 24px;
+    display: inline-block;
+    border: solid;
+    border-radius: 60px;
+    background-color: #000;
+    overflow: hidden;
+    margin: 0 2.2%;
+    border-width: 2px;
+    border-color: #000;
+}
+
+.bottomOutDiv .bottomInDiv .User-social-wrapper div:hover {
+    background-color: #fff;
+    cursor: pointer;
+    color: #000;
+}
+
+.bottomOutDiv .bottomInDiv .User-social-wrapper div:hover i {
+    color: #000;
+}
+
+.bottomOutDiv .bottomInDiv .User-social-wrapper div i {
+    color: #fff;
+    margin-top: 5px;
+}
+.bottomOutDiv .bottomInDiv .User-social-wrapper i.fas {
+    font-size: 8px;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+.bottomOutDiv .bottomInDiv .User-social-wrapper span {
+    position: absolute;
+    text-align: left;
+    margin-top: 7px;
+    margin-left: 15px;
+    font: normal normal normal 11px/14px PT Sans;
+    letter-spacing: 0px;
+    color: #707070;
+}

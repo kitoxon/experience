@@ -1,0 +1,57 @@
+.headerOutDiv{
+    position: relative;
+}
+.headerOutDiv .greyDiv{
+    width: 100%;
+    height: 118px;
+    background: #333333 0% 0% no-repeat padding-box;
+}
+.headerOutDiv .whiteDiv{
+    width: 100%;
+    height: 118px;
+    background: #F6F6F6 0% 0% no-repeat padding-box;
+}
+.headerOutDiv .whiteDiv .groupProfile {
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    left: 15%;
+    bottom: 10%;
+    
+}
+.headerOutDiv .whiteDiv .groupProfile div h1{
+    font: normal normal bold 32px/39px Montserrat;
+    letter-spacing: 0px;
+    color: #000000;
+    text-transform: uppercase;
+    margin: 30px 10px 0;
+}
+.headerOutDiv .whiteDiv .groupProfile div span{
+    font: normal normal medium 19px/23px Montserrat;
+    letter-spacing: 0px;
+    color: #666666;
+    margin: 0 10px;
+}
+.headerOutDiv .whiteDiv .groupProfile img{
+    border-radius: 50%;
+    border: 3px solid white;
+    width: 116px;
+    height: 116px;
+}
+.headerOutDiv .whiteDiv .groupProfile .roundedButton-wrapper{
+    margin-top: 34px;
+    margin-left: 10px;
+    padding: 0;
+    height: 30px;
+    width: 100px;
+}
+
+@media screen and(max-width: 500px) {
+    .headerOutDiv .whiteDiv .groupProfile{
+        left: 5%;
+    }
+    .headerOutDiv .whiteDiv .groupProfile div h1{
+        font: normal normal bold 25px/39px Montserrat;
+    }
+}

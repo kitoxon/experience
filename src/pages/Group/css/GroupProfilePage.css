@@ -1,0 +1,40 @@
+.groupProfilePageDiv{
+    position: relative;
+}
+.groupProfilePageDiv .groupProfilePage {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center; 
+    gap: 39px;
+    padding-top: 50px;
+    background-color: #fafafa;
+}
+
+.groupProfilePageDiv .groupProfilePage .leftside {
+    width: 861px;
+    overflow:hidden;
+}
+.groupProfilePageDiv .groupProfilePage .rightside {
+    width: 334px;
+}
+
+.groupProfilePageDiv .groupProfilePage .leftside .dropdown-selection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 0 27px;
+}
+
+.groupProfilePageDiv .groupProfilePage .leftside .dropdown-selection .css-2b097c-container{
+    width: 30%;
+}
+.groupProfilePageDiv .groupProfilePage .leftside .dropdown-selection .fas.fa-search{
+    border: 1px solid #70707033;
+    border-radius: 6px;
+    font-size: 27px;
+    padding: 5px;
+}
+.groupProfilePageDiv .groupProfilePage .leftside .dropdown-selection .fas.fa-search:hover{
+    background: #262626;
+    color: white;
+}

@@ -1,0 +1,109 @@
+[33mb35b7ba[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mtengis[m[33m)[m auth changed
+[33mba6a8ec[m Update Post.js
+[33m3455206[m Merge branch 'munkhjin' into 'master'
+[33mb85c4d0[m Merge branch 'master' into 'munkhjin'
+[33maddeb4a[m Update App.js
+[33m690e4e5[m auth reconfigured
+[33m7011115[m some error fixed
+[33m5f3c97e[m added media
+[33mfca0e10[m HomePage RecommendedTag
+[33m0c2692c[m Update team-provider-info.json
+[33mbdd3ae6[m HomePage
+[33m5b8ae6e[m Update package.json
+[33mba3cb8a[m Update PopUpSignIn.js
+[33m7929e0e[m HomePage
+[33m3fe6668[m Update package.json
+[33m3e9bc22[m Update PopUpSignIn.js
+[33mee25748[m Update PopUpSignIn.js
+[33mc5e6ed9[m federated popup login added
+[33mff8807f[m login
+[33mf80e9a9[m a
+[33m643008f[m update
+[33m28451b8[m Merge branch 'master' of https://gitlab.com/caak-tech/caak-react
+[33me4dd97d[m context api
+[33m263e394[m Merge branch 'tengis' into 'master'
+[33mc1ed45a[m overflow fix
+[33m0d4412a[m Update Step2.js
+[33me5c489f[m Merge branch 'munkhjin' into 'master'
+[33m67e2565[m register update
+[33m3cbf65b[m header and homepage merged
+[33mb2bee7b[m header and homepage merged
+[33m49511a5[m Update LoginPage.css
+[33m4e6a775[m Update App.js
+[33mc2500cf[m Update App.js
+[33m65d0e85[m Merge branch 'munkhjin' into 'master'
+[33m37b9817[m merged
+[33me09abc8[m merged
+[33m17d1b2b[m some changes
+[33ma30b842[m Merge branch 'munkhjin' into 'master'
+[33m45009b9[m Merge branch 'master' into 'munkhjin'
+[33m2e737f6[m Merge branch 'tengis' into 'master'
+[33mb6cb880[m login updating
+[33mb5f4015[m Header fixes
+[33m1a4b504[m homepage
+[33m0318167[m homepage
+[33m2041ebd[m Merge branch 'tengis' into 'master'
+[33me261d0f[m Merge branch 'master' into 'tengis'
+[33m563f528[m Merge branch 'tengis' into 'master'
+[33m7b5ec3e[m Merge branch 'master' into 'tengis'
+[33m54d5a78[m Merge branch 'munkhjin' into 'master'
+[33mef96731[m a
+[33m0f22f03[m number regex added
+[33mdfec2dc[m regex verification code added
+[33mc77dbda[m regex fixed checked
+[33m5488b9a[m User configuration page / User sidebar
+[33ma919a66[m warning fiexd
+[33m525e26e[m check name
+[33m3db8242[m name
+[33ma274ad0[m regex and split
+[33m43f8098[m warning cleared
+[33mebecd4c[m email, phone_number
+[33m9809b2d[m added urls
+[33m93004e2[m Merge branch 'munkhjin' into 'master'
+[33m0ad7f83[m auth updated
+[33mdc9bde3[m register and login popup route
+[33m5d15d0b[m routes
+[33m80ca000[m User config sidebar complete
+[33m6b75e86[m loginFooter Border
+[33m318ba7b[m first route configured
+[33m6f4a0a1[m Merge branch 'munkhjin' into 'master'
+[33me00a8b7[m react router added
+[33m558e271[m placeholder added
+[33m16b6aaf[m Step3 count worked
+[33m3ac398a[m Merge branch 'master' of https://gitlab.com/caak-tech/caak-react
+[33m497713c[m auth configure
+[33m1bdb0e8[m Merge branch 'munkhjin' into 'master'
+[33m6378402[m login and register
+[33m89ca26d[m login and register
+[33maaed1bf[m Update RectangleSocialBtn.js
+[33mfe50514[m Update LoginPage.js
+[33m6ce8b13[m Update LoginPage.js
+[33m7cc1277[m Update .gitignore
+[33m0a5bc1d[m Merge branch 'munkhjin' into 'master'
+[33m523ae88[m Merge branch 'master' into 'munkhjin'
+[33m873a92a[m Merge branch 'tengis' into 'master'
+[33m3467640[m Merge branch 'master' into 'tengis'
+[33m25049f6[m amplify configure
+[33mdb7ef55[m login
+[33meec55ae[m Responsive header
+[33m7bdaddd[m Merge branch 'munkhjin' into 'master'
+[33m0bbe670[m "Responsive Done"
+[33mb53e418[m "Responsive"
+[33m4c08fee[m Merge branch 'tengis' into 'master'
+[33maf84e9a[m Merge branch 'master' into 'tengis'
+[33m8284c7c[m 'Some responsive changes'
+[33m9d9ee12[m a
+[33m577720e[m responsive fixes
+[33mfb33f14[m Hover changes
+[33m7964549[m Merge branch 'munkhjin' into 'master'
+[33m33581f5[m Merge branch 'master' into 'munkhjin'
+[33mf7d65a2[m Merge branch 'tengis' into 'master'
+[33mf261c84[m DateSelect, GenderSelect
+[33mbfc7932[m app js
+[33mf8b36c7[m Components
+[33m4973c3b[m DateSelect, GenderSelect
+[33mb303bcb[m DateSelect, GenderSelect
+[33m9caf4b7[m Scoialbutton, TextFieldWithLabel components
+[33mbc49b5e[m init
+[33m00beb1c[m Update App.js
+[33m541e10a[m Initial commit

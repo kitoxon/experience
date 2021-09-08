@@ -1,0 +1,83 @@
+.groupProfilePage .leftside .my-masonry-grid {
+    display: -webkit-box; /* Not needed if autoprefixing */
+    display: -ms-flexbox; /* Not needed if autoprefixing */
+    display: flex;
+    margin-left: -30px; /* gutter size offset */
+    width: auto;
+}
+.groupProfilePage .leftside .my-masonry-grid_column {
+    padding-left: 30px; /* gutter size */
+    background-clip: padding-box;
+}
+
+/* Style your items */
+.groupProfilePage .leftside .my-masonry-grid_column > div { /* change div to reference your elements you put in <Masonry> */
+    margin-bottom: 30px;
+} 
+
+.groupProfilePage .leftside .dashboard-nav {
+    height: 70px;
+    display: flex;
+    align-items: flex-start;
+    gap: 3vw;
+    font: normal normal bold 14px/18px Montserrat;
+    letter-spacing: 0px;
+    color: #262626;
+    text-transform: uppercase;
+}
+.groupProfilePage .leftside .dashboard-nav div{
+    display: flex;
+    gap: 3vw;
+}
+
+.groupProfilePage .leftside .dashboard-nav p {
+    padding-bottom: 7px;
+    opacity: 0.4;
+    cursor: pointer;
+}
+
+.groupProfilePage .leftside .dashboard-nav p:hover {
+    opacity: 1;
+}
+
+.groupProfilePage .leftside .dashboard-nav p.active-link {
+    border-bottom: 3px solid #000;
+    box-sizing: border-box;
+    opacity: 1;
+    cursor: text;
+}
+
+.groupProfilePageDiv{
+    position: relative;
+}
+.groupProfilePageDiv .groupProfilePage {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center; 
+    gap: 39px;
+    padding-top: 50px;
+}
+
+.groupProfilePageDiv .groupProfilePage .leftside {
+    width: 861px;
+    overflow:hidden;
+}
+.groupProfilePageDiv .groupProfilePage .rightside {
+    width: 334px;
+}
+@media (max-width: 500px) {
+    .groupProfilePageDiv .headerOutDiv .whiteDiv .groupProfile{
+        left: 5%;
+    }
+    .groupProfilePageDiv .headerOutDiv .whiteDiv .groupProfile div h1{
+        font: normal normal bold 25px/39px Montserrat;
+    }
+}
+@media (max-width: 1240px) {
+    .groupProfilePageDiv .groupProfilePage .rightside{
+        width: 70%;
+    }
+    .groupProfilePageDiv .groupProfilePage .leftside {
+        width: 70%;
+    }
+}

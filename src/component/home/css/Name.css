@@ -1,0 +1,124 @@
+.outDiv .inDiv{
+    width: 12.5vw;
+    left: 0;
+    margin-top: 30px;
+    border: solid 1px #70707033;
+    padding: 5px;
+    box-shadow: 0px 0px 6px #00000029;
+    position: absolute;
+    display: block;
+    background: white;
+    z-index: 100;
+}
+.outDiv .inDiv:before, .outDiv .inDiv:after {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  left: 10px;
+  border: 11px solid transparent;
+  border-bottom-color: #dddddd;
+}
+.outDiv .inDiv:after {
+    left: 11px;
+    border: 10px solid transparent;
+    border-bottom-color: #ffffff;
+  }
+
+.outDiv .inDiv .insiDiv img{
+    border-radius: 50%;
+    width: 53px;
+    height: 53px;
+}
+.outDiv .inDiv .insiDiv .image{
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.outDiv .inDiv .insiDiv {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+}
+
+.outDiv .inDiv .insiDiv .userName h2{
+    letter-spacing: 0px;
+    padding-bottom: 5px;
+    font: normal normal bold 20px/30px Montserrat;
+    letter-spacing: 0px;
+    color: #000000;
+    margin: 0;
+    padding: 5px 0;
+}
+
+.outDiv .inDiv .insiDiv .userName .userInfo{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5px;
+    text-align: center;
+    gap: 2.75vw;
+}
+
+.outDiv .inDiv .insiDiv .userInfo h3{
+    font: normal normal 600 16px/22px Montserrat;
+    letter-spacing: 0px;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    padding-top: 5px;
+}
+.outDiv .inDiv .insiDiv .userInfo span{
+    text-align: left;
+    font: normal normal 600 10px/15px Montserrat;
+    letter-spacing: 0px;
+    color: #666666;
+}
+
+.outDiv .roundedButton-wrapper {
+    height: 25px;
+    font: normal normal 600 12px/18px Montserrat;
+    padding: 0 0;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 480px) {
+    .outDiv .indiv{
+        height: 80%;
+    }
+    .outDiv .inDiv .insiDiv .userName h2{
+        letter-spacing: 0px;
+        padding-bottom: 10px;
+        font: normal normal bold 20px/25px Montserrat;
+        letter-spacing: 0px;
+        color: #000000;
+        margin: 0;
+        padding: 10px 0;
+    }
+    
+    .outDiv .inDiv .insiDiv .userInfo h3{
+        font: normal normal 600 14px/18px Montserrat;
+        letter-spacing: 0px;
+        color: #000000;
+        margin: 0;
+        padding: 0;
+        padding-top: 10px;
+    }
+    .outDiv .inDiv .insiDiv .userInfo span{
+        text-align: left;
+        font: normal normal 600 9px/12px Montserrat;
+        letter-spacing: 0px;
+        color: #666666;
+    }
+} 
+
+@media (max-width: 1500px) {
+    .outDiv .inDiv .insiDiv{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (max-width: 500px){
+    .outDiv .inDiv{
+        width: 100%;
+    }
+}

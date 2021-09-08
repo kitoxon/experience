@@ -1,0 +1,29 @@
+.textAreaWithLabel-wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    gap: 0.5rem;
+}
+
+.textAreaWithLabel-wrapper textarea {
+    width: 100%;
+    height: 161px;
+    margin: 0;
+    box-sizing: border-box;
+    border: 1px solid #66666633;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    padding-left: 10px;
+    font: normal normal 500 16px/19px Montserrat;
+    border-radius: 6px;
+    padding-top: 10px;
+}
+
+.textAreaWithLabel-wrapper textarea::placeholder {
+    color: #000000;
+    opacity: 0.3;
+}
+
+.textAreaWithLabel-wrapper label {
+    font: normal normal 500 20px/24px Montserrat;
+    color: #000;
+}

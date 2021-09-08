@@ -1,0 +1,160 @@
+.memberlogOut .memberlogIn1{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border: 1px solid #70707033;
+    border-radius: 6px;
+    width: 90%;
+    float: right;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+.memberlogOut .memberlogIn1 img{
+    border-radius: 50%;
+    width: 142px;
+    height: 142px;
+    position: absolute;
+    left: -80px;
+}
+.memberlogOut .memberlogIn1 .groupmembername{
+    margin-left: 90px;
+    padding-top: 20px;
+}
+.memberlogOut .memberlogIn1 .groupmembername h1{
+    margin-bottom: 0;
+    font: normal normal 600 27px/33px Montserrat;
+    letter-spacing: 0px;
+    color: #000000;
+}
+.memberlogOut .memberlogIn1 .groupmembername span{
+    font: normal normal 500 23px/28px Montserrat;
+    letter-spacing: 0px;
+    color: #989696;
+}
+
+.memberlogOut .memberlogIn1 table tr th{
+    font: normal normal 600 21px/25px Montserrat;
+    letter-spacing: 0px;
+    color: #000000;
+    padding: 0 30px;
+}
+.memberlogOut .memberlogIn1 table{
+    margin-left: 20px;
+    padding-bottom: 70px;
+    padding-top: 10px;
+}
+.memberlogOut .memberlogIn1 table tr td{
+    font: normal normal 500 23px/28px Montserrat;
+    letter-spacing: 0px;
+    color: #000000;
+}
+.memberlogOut .memberlogIn1 .membericonout{
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    display: flex;
+    flex-direction: row;
+}
+.memberlogOut .memberlogIn1 .membericonout .membericon{
+    text-align: center;
+    font-size: 18px;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    border: solid;
+    border-radius: 60px;
+    background-color: #000;
+    overflow: hidden;
+    margin: 0 2.2%;
+    border-width: 2px;
+    border-color: #000;
+    padding: 0 4px;
+}
+
+.memberlogOut .memberlogIn1 .membericon:hover{
+    background-color: #fff;
+    cursor: pointer;
+    color: #000;
+    transform: scale(1.3);
+    transition: 0.4s;
+}
+.memberlogOut .memberlogIn1 .membericon:hover i{
+    color: #000;
+}
+.memberlogOut .memberlogIn1 .membericon i{
+    color: #fff;
+    margin-top: 5px;
+}
+.memberlogOut .posts-wrapper {
+    position: absolute;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border: 1px solid #70707033;
+    border-radius: 6px;
+    padding: 1.8vw;
+    margin-top: 200px;
+    width: 91%;
+}
+
+.memberlogOut .posts-wrapper>h3 {
+    margin: 0.5vh 0 3vh 0;
+    font: normal normal 600 21px/25px Montserrat;
+    text-align: center;
+    color: #000;
+}
+
+.memberlogOut .posts-wrapper .posts-table {
+    background: #F9F9F9 0% 0% no-repeat padding-box;
+    border: 1px solid #70707033;
+    border-radius: 6px;
+    width: 100%;
+}
+
+.memberlogOut .posts-wrapper .posts-table .table-header {
+    height: 6vh;
+}
+
+.memberlogOut .posts-wrapper .posts-table .table-header th {
+    font: normal normal 500 20px/24px Montserrat;
+    border-bottom: 1px solid #666666;
+    padding: 0;
+}
+
+.memberlogOut .posts-wrapper .posts-table .image-cell>img{
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-top: 0.7vh;
+}
+
+.memberlogOut .posts-wrapper .posts-table .graph-cell>div {
+    border: 1px solid #000;
+    width: 90px;
+    height: 60px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.memberlogOut .posts-wrapper .posts-table th,td {
+    text-align: center;
+    font: normal normal 500 17px/20px Montserrat;
+}
+
+.memberlogOut .posts-wrapper .posts-table td.red-text {
+    color: #FF0000;
+}
+
+.memberlogOut .posts-wrapper .posts-table>tbody tr {
+    height: calc(90px + 2.8vh);
+}
+
+.memberlogOut .posts-wrapper .posts-table>tfoot>tr>td>p{
+    font: normal normal 500 17px/20px Montserrat;
+    padding: 0 0.75vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    color: #262626;
+    cursor: pointer;
+    display: inline-block;
+}

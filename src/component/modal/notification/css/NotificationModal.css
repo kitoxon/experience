@@ -1,0 +1,71 @@
+.notiOutDiv{
+    margin-top: 50px;
+    width: 16vw;
+    min-width: 200px;
+    position: absolute;
+    z-index: 100;
+    left: -14.375vw;
+}
+.notiOutDiv .notiInDiv{
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 20px);
+    height: 685px;
+    overflow-y: auto;
+    background: #F9F9F9 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 20px #00000029;
+    border: 1px solid #70707033;
+    opacity: 1;
+    padding: 10px;
+}
+
+.notiOutDiv .notiInDiv .notification{
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    padding: 10px 0;
+    
+}
+.notiOutDiv .notiInDiv span span{
+    text-align: left;
+    font: normal normal bold 10px/18px Montserrat;
+    letter-spacing: 0px;
+    color: #262626;
+}
+.notiOutDiv .notiInDiv span{
+    width: 176px;
+    font: normal normal normal 10px/18px Montserrat;
+    letter-spacing: 0px;
+    color: #262626;
+}
+.notiOutDiv .notiInDiv img{
+    width: 31px;
+    height: 33px;
+}
+.notiOutDiv .notiInDiv .notiPost img{
+    width: 42px;
+    height: 42px;
+}
+.notiOutDiv .notiInDiv:before, .notiOutDiv .notiInDiv:after {
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    left: 12.72vw;
+    border: 11px solid transparent;
+    border-bottom-color: #dddddd;
+}
+.notiOutDiv .notiInDiv:after {
+    left: 12.7vw;
+    border: 10px solid transparent;
+    border-bottom-color: #ffffff;
+}
+
+.notiInDiv {
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: scroll; 
+}
+
+.notiInDiv::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+}

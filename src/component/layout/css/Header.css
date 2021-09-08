@@ -1,0 +1,477 @@
+.App-header {
+    position: sticky;
+    top: 0;
+    height: 72px;
+    border-bottom: solid;
+    border-width: 1px;
+    border-color: #dadada;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 51;
+    gap: 1.2vw;
+    padding: 0 17%;
+}
+
+.App-header .left-side {
+    display: flex;
+    height: 100%;
+}
+
+.App-header .header-logo-wrapper {
+    height: 100%;
+}
+
+.App-header .header-logo {
+    margin-right: 2.25vw;
+    margin-top: 14px;
+}
+
+.App-header .flex-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 100%;
+    align-items: center;
+    gap: 1.25vw;
+    flex: 0 1 auto;
+}
+
+.App-header .flex-reverse .flex-row {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    gap: 1.35vw;
+    transition: all 0.3s;
+}
+
+.App-header .searchbar-wrapper {
+    height: 100%;
+    color: #000;
+    opacity: 0.5;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    transition: all 0.3s;
+}
+
+.App-header .searchbar-wrapper .fa-search {
+    font-size: 20px;
+    color: #000;
+    opacity: 1;
+}
+
+.App-header .searchbar-wrapper input{
+    font-family: Montserrat;
+    font-size: 16px;
+    margin-left: 0.625vw;
+    min-width: 100px;
+    height: calc(100% - 2px);
+    width: 100%;
+    border: none;
+    outline: none;
+    display: inline-block;
+    transition: visibility 0.3s, opacity 0.3s;
+}
+
+.App-header .searchbar-wrapper input:focus {
+    opacity: 1;
+    display: inline-block;
+}
+
+.App-header .searchbar-wrapper:focus-within {
+    color: #000;
+    opacity: 1;
+}
+
+.App-header .header-link {
+    color: #666666;
+    opacity: 0.5;
+    border-spacing: 4px;
+    border: none;
+    height: 100%;
+    display: table;
+    font: normal normal bold 14px/18px Montserrat;
+    cursor: pointer;
+}
+
+.App-header .header-link:hover {
+    color: #000;
+    opacity: 1;
+}
+
+.App-header .active-header-link {
+    opacity: 1;
+    color: #000;
+    box-sizing: border-box;
+    padding-top: 4px;
+    border-bottom: solid;
+    border-width: 4px;
+}
+
+.App-header .header-link p {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.App-header .float-right {
+    display: inherit;
+    justify-content: center;
+    align-items: inherit;
+    gap: 0.6vw;
+    height: inherit;
+}
+
+.App-header .float-right>.header-ellipsis-menu {
+    height: 100%;
+    font-size: 45px;
+    letter-spacing: -2px;
+    opacity: 50%;
+    padding: 0 0.260vw;
+    cursor: pointer;
+    position: relative;
+}
+
+.App-header .float-right>.header-ellipsis-menu:hover {
+    opacity: 100%;
+}
+
+.App-header .float-right>.ellipsis-dropdown-container {
+    position: relative;
+}
+
+.App-header .float-right>.ellipsis-dropdown-container .header-ellipsis-menu-wrapper {
+    display: flex;
+    background: #F9F9F9 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 2px #00000029;
+    border: 1px solid #7070703D;
+    border-radius: 5px;
+    position: absolute;
+    margin-top: 5px;
+    right: 0;
+    margin-right: -7px;
+    margin-top: 20px;
+    font: normal normal 500 14px/16px Montserrat;
+}
+
+.App-header .float-right>.ellipsis-dropdown-container .header-ellipsis-menu-wrapper .ellipsis-content:before, .App-header .float-right>.ellipsis-dropdown-container .header-ellipsis-menu-wrapper .ellipsis-content:after {
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    right: 27px;
+    border: 5px solid transparent;
+    border-bottom-color: #dddddd;
+}
+
+.App-header .float-right>.ellipsis-dropdown-container .header-ellipsis-menu-wrapper .ellipsis-content:after {
+    right: 29px;
+    border: 5px solid transparent;
+    border-bottom-color: #F9F9F9;
+}
+.App-header .float-right>.ellipsis-dropdown-container .header-ellipsis-menu-wrapper .ellipsis-content>div{
+    padding: 10px 15px;
+    cursor: pointer;
+    min-width: 60px;
+    width: 6.5vw;
+}
+
+.App-header .float-right>.ellipsis-dropdown-container .header-ellipsis-menu-wrapper .ellipsis-content>div:hover {
+    background-color: #dadada;
+}
+
+.App-header .header-ellipsis-menu p {
+    margin: 0;
+    margin-top: -10px;
+}
+
+.App-header .header-login {
+    width: 112px;
+    height: 40px;
+    margin: 0;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #70707033;
+    border-radius: 2px;
+    font: normal normal 700 16px Montserrat;
+    color: #666666;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.15s;
+}
+
+.App-header .header-login:hover {
+    background-color: #F9F9F9;
+    color: #000000;
+}
+
+.App-header .header-register {
+    height: 40px;
+    margin: 0;
+    background: #8A8A8A 0% 0% no-repeat padding-box;
+    border: 1px solid #70707033;
+    border-radius: 2px;
+    font: normal normal 700 16px Montserrat;
+    color: #666666;
+    padding: 10px;
+    color: #F9F9F9;
+    cursor: pointer;
+    transition: all 0.15s;
+}
+
+.App-header .header-register:hover {
+    background-color: #363636;
+    color: #fff
+}
+
+/* 
+.App-header .header-coins {
+    background: #666666 0% 0% no-repeat padding-box;
+    border-radius: 3px;
+    width: 87px;
+    text-align: center;
+    color: #fff;
+    font: normal normal bold 17px/20px Montserrat;
+    cursor: pointer;
+    padding: 7px 3px;
+    opacity: 0.7;
+}
+
+.App-header .header-coins:hover {
+    opacity: 1;
+}
+
+.App-header .header-coins i {
+    color: rgb(255, 187, 0);
+    margin-left: 8px;
+}
+*/
+
+.App-header .header-hamburger {
+    display: none;
+    cursor: pointer;
+    font-size: 40px;
+}
+.App-header .header-icons {
+    display: flex;
+}
+.App-header .header-icons i {
+    font-size: 24px;
+    margin: 0 0.6vw;
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.App-header .header-icons i:hover {
+    opacity: 1;
+}
+
+.App-header .header-icons .notification-modal-wrapper {
+    position: relative;
+}
+
+.App-header .float-right .user-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.App-header .float-right .user-dropdown>.user-profileimg {
+    border-radius: 9999px;
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.App-header .float-right .user-dropdown>.dropdown-content {
+    position: absolute;
+    background: #F9F9F9 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 12px #00000029;
+    border: 1px solid #70707033;
+    width: 14vw;
+    min-width: 210px;
+    z-index: 101;
+    left: -11.458vw;
+    top: 60px;
+}
+
+/* all this for a single triangle */
+.App-header .float-right .user-dropdown>.dropdown-content:before, .App-header .float-right .user-dropdown>.dropdown-content:after {
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    left: 12vw;
+    border: 11px solid transparent;
+    border-bottom-color: #dddddd;
+}
+
+.App-header .float-right .user-dropdown>.dropdown-content:after {
+    left: 11.979vw;
+    border: 10px solid transparent;
+    border-bottom-color: #f9f9f9;
+}
+
+.App-header .float-right .user-dropdown>.dropdown-content>.dropdown-section {
+    border-top: 1px solid #DDDDDD;
+    font: normal normal medium 16px/19px Montserrat;
+    padding: 1vh 0;
+}
+
+.App-header .float-right .user-dropdown>.dropdown-content .dropdown-header>img {
+    width: 45px;
+    height: 45px;
+    border-radius: 9999px;
+    object-fit: cover;
+    display: inline-block;
+}
+
+.App-header .float-right .user-dropdown>.dropdown-content .dropdown-header {
+    display: flex;
+    padding: 2vh 1vw;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.App-header .float-right .user-dropdown>.dropdown-content .dropdown-header:hover {
+    background-color: #dadada;
+}
+
+.App-header .float-right .user-dropdown>.dropdown-content .dropdown-header h3 {
+    font: normal normal 500 16px/19px Montserrat;
+    margin: 0;
+}
+
+.App-header .float-right .user-dropdown>.dropdown-content .dropdown-header p {
+    font: normal normal 500 12px/15px Montserrat;
+    letter-spacing: 0px;
+    color: #666666;
+    margin: 0;
+}
+
+.App-header .float-right .user-dropdown>.dropdown-content>.dropdown-section .dropdown-row {
+    padding: 1vh 20px;
+    font: normal normal 500 16px/19px Montserrat;
+    cursor: pointer;
+}
+
+.App-header .float-right .user-dropdown>.dropdown-content>.dropdown-section .dropdown-row:hover {
+    background-color: #dadada;
+}
+
+.App-header .float-right .user-dropdown>.dropdown-content>.dropdown-section .dropdown-row i {
+    font-size: 18px;
+    margin-right: 0.6vw;
+    width: 20px;
+    text-align: center;
+}
+
+.App-header .float-right .user-dropdown>.dropdown-content a {
+    text-decoration: none;
+    color: #000;
+}
+
+@media screen and (max-width: 1000px) {
+    .App-header .flex-reverse .searchbar-wrapper input {
+        width: 100px;
+    }
+    .App-header .flex-reverse {
+        margin-right: 0;
+    }
+}
+
+/* Search bar hover effects for desktop */
+@media (hover: hover) and (pointer: fine) and (min-width: 600px) {
+    .App-header .searchbar-wrapper {
+        width: 20px;
+    }
+    .App-header .searchbar-wrapper:hover, .searchbar-wrapper:focus-within{
+        transform: translateX(calc(-140px - 2.5vw));
+    }
+    .App-header .searchbar-wrapper:hover, .searchbar-wrapper:focus-within {
+        width: 20vw;
+        min-width: 200px;
+    }
+    .App-header .searchbar-wrapper:hover input, .App-header .searchbar-wrapper:focus-within input{
+        display: inline-block;
+        visibility: visible;
+        opacity: 1;
+    }
+    .App-header .searchbar-wrapper:hover + .flex-row, .searchbar-wrapper:focus-within + .flex-row {
+        visibility: hidden;
+        opacity: 0;
+    }
+    .App-header .searchbar-wrapper input{
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .App-header {
+        height: 52px;
+        display: block;
+        justify-content: space-between;
+        padding: 0;
+    }
+    .App-header .header-logo-wrapper .header-logo {
+        margin-top: 5px;
+    }
+    .App-header *:not(:first-child, .float-right) {
+        display: none;
+    }
+    .App-header .float-right>*:not(.header-hamburger) {
+        display: none;
+    }
+    .App-header .header-hamburger {
+        display: block;
+        position: absolute;
+        top: 0px;
+        right: 20px;
+    }
+    .App-header .header-logo-wrapper {
+        height: 100%;
+        margin-left: 20px;
+    }
+    .App-header.responsive .left-side {
+        display: block;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        background-color: #fff;
+    }
+    .App-header.responsive .flex-reverse {
+        display: block;
+        height: 146px;
+        background-color: #fff;
+    }
+    .App-header.responsive .flex-reverse .flex-row {
+        flex-direction: column;
+        height: 94px;
+    }
+    .App-header.responsive .searchbar-wrapper {
+        display: block;
+        height: 47px;
+        overflow-y: hidden;
+    }
+    .App-header.responsive .searchbar-wrapper input[type="text"] {
+        margin-top: 2px;
+    }
+    .App-header.responsive .responsive-menu-item:not(.searchbar-wrapper) {
+        display: block;
+        text-align: left;
+        height: 52px;
+        border-top: solid;
+        border-bottom: none;
+        border-width: 1px;
+        border-color: #dadada;
+        background-color: #f5f5f5;
+        text-align: center;
+        opacity: 1;
+        color: black;
+    }
+    .App-header.responsive .responsive-menu-item {
+        padding-left: 5vw;
+        width: 100% - 5vw;
+    }
+}

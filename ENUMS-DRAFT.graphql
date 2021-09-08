@@ -1,0 +1,44 @@
+enum GroupUsersRole{
+  MEMBER
+  MODERATOR
+  ADMIN
+}
+
+enum ReportTypeStatus{
+    ACTIVE
+    INACTIVE
+} 
+
+enum CommentStatus{
+    DELETED
+    EDITED
+    CREATED
+}
+
+enum PostType{
+  SUB
+  PARENT
+}
+
+enum PostStatus {
+  DRAFT
+  PENDING
+  CONFIRMED
+  ARCHIVED
+  DELETED
+}
+
+enum PostCommentType {
+  DISABLE
+  ENABLE
+}
+
+enum ReportStatus{
+  OPEN
+  CLOSED
+}
+
+enum UserDetailStatus{
+  ACTIVE
+  INACTIVE
+}

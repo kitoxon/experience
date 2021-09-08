@@ -1,0 +1,54 @@
+.UserStatistic-wrapper {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+    gap: 1.75vw;
+}
+
+.UserStatistic-wrapper .left-side {
+    flex: 1 1 861px;
+    margin-top: 4vh;
+    max-width: 860px;
+    overflow: hidden;
+}
+
+.UserStatistic-wrapper .left-side .title {
+    width: 100%;
+    text-align: center;
+    font: normal normal bold 20px/24px Montserrat;
+}
+
+.UserStatistic-wrapper .left-side .dashboard-nav {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3vw;
+    font: normal normal 500 20px/24px Montserrat;
+    border-bottom: 1px solid #70707033;
+    border-top: 1px solid #70707033;
+}
+
+.UserStatistic-wrapper .left-side .dashboard-nav p {
+    padding-bottom: 7px;
+    opacity: 0.4;
+    cursor: pointer;
+}
+
+.UserStatistic-wrapper .left-side .dashboard-nav p:hover {
+    opacity: 1;
+}
+
+.UserStatistic-wrapper .left-side .dashboard-nav p.active-link {
+    border-bottom: 3px solid #000;
+    box-sizing: border-box;
+    opacity: 1;
+    cursor: text;
+}
+
+.UserStatistic-wrapper .right-side {
+    min-width: 240px;
+    margin-top: 5vh;
+    flex: 0 0 334px;
+}

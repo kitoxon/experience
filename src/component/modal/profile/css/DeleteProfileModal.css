@@ -1,0 +1,77 @@
+.DeleteProfileModal-wrapper {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.DeleteProfileModal-wrapper .modal-content {
+    width: 550px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.DeleteProfileModal-wrapper .modal-content .modal-header {
+    border-bottom: 2px solid #70707033;
+    padding: 50px;
+    padding-bottom: 0;
+}
+
+.DeleteProfileModal-wrapper .modal-content .modal-header h3 {
+    font: normal normal bold 20px/24px Montserrat;
+    margin: 0;
+    padding-bottom: 6px;
+    border-bottom: 5px solid #000;
+    width: 175px;
+    margin-bottom: 44px;
+}
+
+.DeleteProfileModal-wrapper .modal-content .modal-header .checkbox-wrapper {
+    margin-bottom: 33px;
+    text-decoration: underline;
+    font: normal normal 500 20px/24px Montserrat;
+}
+
+.DeleteProfileModal-wrapper .modal-content .modal-header .checkbox-wrapper>* {
+    display: inline;
+}
+
+.DeleteProfileModal-wrapper .modal-content .modal-header .checkbox-wrapper>input[type="radio"] {
+    float: right;
+    width: 21px;
+    height: 21px;
+}
+
+.DeleteProfileModal-wrapper .modal-content .modal-footer {
+    padding: 36px 50px;
+}
+
+.DeleteProfileModal-wrapper .modal-content .modal-footer label {
+    font: normal normal bold 20px/24px Montserrat;
+    margin-top: 0;
+}
+
+.DeleteProfileModal-wrapper .modal-content .modal-footer .footer-buttons .roundedButton-wrapper {
+    width: auto;
+    font: normal normal normal 16px/19px Montserrat;
+    height: 37px;
+    padding: 0 5px;
+    border-radius: 3px;
+    background: #333333 0% 0% no-repeat padding-box;
+    padding: 0 19px;
+}
+
+.DeleteProfileModal-wrapper .modal-content .modal-footer .footer-buttons .roundedButton-wrapper:hover {
+    opacity: 0.7;
+}
+
+.DeleteProfileModal-wrapper .modal-content .modal-footer .footer-buttons{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 36px;
+}

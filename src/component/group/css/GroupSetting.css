@@ -1,0 +1,242 @@
+
+.settingOutDiv .GroupSetting-main-window .GroupSetting-main-wrapper {
+    width: 100%;
+    opacity: 1;
+    margin-bottom: 30px;
+}
+
+.settingOutDiv .GroupSetting-main-window .GroupSetting-main-wrapper .GroupSetting-header {
+    height: 62px;
+    padding: 0 1.719vw;
+}
+
+.settingOutDiv .GroupSetting-main-window .GroupSetting-main-wrapper .GroupSetting-header h3 {
+    height: calc(100% - 22px);
+    margin: 0;
+    padding-top: 18px;
+    text-align: center;
+    font: normal normal 700 20px/24px Montserrat;
+    letter-spacing: 0px;
+    color: #000000;
+    
+}
+.settingOutDiv .GroupSetting-main-window .GroupSetting-main-wrapper .dashboard-nav {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+    font: normal normal 600 20px/24px Montserrat;
+    letter-spacing: 0px;
+    color: #000000;
+    border-top: 1px solid #70707033;
+    border-bottom: 1px solid #70707033;
+}
+
+.settingOutDiv .GroupSetting-main-window .GroupSetting-main-wrapper .dashboard-nav p {
+    padding-bottom: 7px;
+    opacity: 0.4;
+    cursor: pointer;
+}
+
+.settingOutDiv .GroupSetting-main-window .GroupSetting-main-wrapper .dashboard-nav p:hover {
+    opacity: 1;
+}
+
+.settingOutDiv .GroupSetting-main-window .GroupSetting-main-wrapper .dashboard-nav p.active-link {
+    border-bottom: 3px solid #000;
+    box-sizing: border-box;
+    opacity: 1;
+    cursor: text;
+}
+
+.settingOutDiv .GroupSetting-main-window .GroupSetting-main-wrapper .group-info {
+    padding: 26px 1.719vw 33px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #70707033;
+    border-radius: 6px;
+    margin-top: 30px;
+}
+.settingOutDiv .GroupSetting-main-window .GroupSetting-main-wrapper .group-info h4{
+    font: normal normal 500 20px/24px Montserrat;
+    color: #000;
+}
+
+.settingOutDiv .GroupSetting-main-window .GroupSetting-main-wrapper label {
+    margin: 27px 0 10px;
+}
+
+
+.settingOutDiv .GroupSetting-main-window .GroupSetting-main-wrapper .textFielsettingOutDiv input[type="text"] {
+    margin: 9px 0;
+}
+.settingOutDiv .GroupSetting-main-window .GroupSetting-main-wrapper .group-privacy h4{
+    font: normal normal 500 20px/24px Montserrat;
+    color: #000;
+}
+.settingOutDiv .GroupSetting-main-window .GroupSetting-main-wrapper .group-info .group-info-header{
+    border-bottom: solid;
+    border-width: 1px;
+    border-color: #70707033;
+}
+.settingOutDiv .GroupSetting-main-window .GroupSetting-main-wrapper .group-info .group-info-header h4 {
+    margin: 0;
+    font: normal normal 700 20px/24px Montserrat;
+    letter-spacing: 0px;
+    color: #000000;
+    border-bottom: solid;
+    border-width: 4px;
+    width: 210px;
+    padding-bottom: 15px;
+}
+.settingOutDiv .GroupSetting-main-window .GroupSetting-main-wrapper .group-privacy .group-privacy-header{
+    border-bottom: solid;
+    border-width: 1px;
+    border-color: #70707033;
+}
+.settingOutDiv .GroupSetting-main-window .GroupSetting-main-wrapper .group-privacy .group-privacy-header h4 {
+    margin: 0;
+    font: normal normal 700 20px/24px Montserrat;
+    letter-spacing: 0px;
+    color: #000000;
+    border-bottom: solid;
+    border-width: 4px;
+    width: 95px;
+    padding-bottom: 15px;
+}
+
+.settingOutDiv .GroupSetting-main-window .GroupSetting-main-wrapper .group-leaders .group-leaders-header{
+    border-bottom: solid;
+    border-width: 1px;
+    border-color: #70707033;
+}
+.settingOutDiv .GroupSetting-main-window .GroupSetting-main-wrapper .group-leaders .group-leaders-header h4 {
+    margin: 0;
+    font: normal normal 700 20px/24px Montserrat;
+    letter-spacing: 0px;
+    color: #000000;
+    border-bottom: solid;
+    border-width: 4px;
+    width: 135px;
+    padding-bottom: 15px;
+}
+.settingOutDiv .GroupSetting-main-window .GroupSetting-main-wrapper .group-privacy {
+    padding: 26px 1.719vw 33px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #70707033;
+    border-radius: 6px;
+    margin-top: 30px;
+}
+
+.settingOutDiv .GroupSetting-main-window .GroupSetting-main-wrapper .group-privacy .group-privacy-selection {
+    margin: 27px 0;
+}
+
+.settingOutDiv .GroupSetting-main-window .GroupSetting-main-wrapper .group-privacy .group-privacy-selection i.fas {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.settingOutDiv .GroupSetting-main-window .GroupSetting-main-wrapper .group-privacy .group-privacy-checkbox {
+    font: normal normal 600 20px/24px Montserrat;
+    padding-right: 40px;
+    margin: 20px 0 20px 10px;
+}
+
+.settingOutDiv .GroupSetting-main-window .GroupSetting-main-wrapper .group-privacy .group-privacy-checkbox input[type="checkbox"] {
+    float: right;
+    width: 20px;
+    height: 20px;
+    outline-color: #000;
+}
+
+.settingOutDiv .GroupSetting-main-window .GroupSetting-main-wrapper .group-info .squareButtonWithIcon-wrapper {
+    width: 15%;
+    height: 117px;
+    padding: 15px;
+}
+
+.settingOutDiv .GroupSetting-main-window .GroupSetting-main-wrapper .group-info .rules .fas{
+    display: flex;
+    justify-content: center;
+    font-size: 29px;
+}
+
+.settingOutDiv .GroupSetting-main-window .GroupSetting-main-wrapper .group-leaders {
+    padding: 26px 1.719vw 33px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #70707033;
+    border-radius: 6px;
+    margin-top: 30px;
+}
+.settingOutDiv .GroupSetting-main-window .GroupSetting-main-wrapper .group-leaders .group-leaders-outDiv{
+    height: 312px;
+    position: relative;
+}
+.settingOutDiv .GroupSetting-main-window .GroupSetting-main-wrapper .group-leaders .group-leaders-outDiv .group-leaders-list img{
+    border-radius: 50%;
+    width: 62px;
+    height: 62px;
+}
+.settingOutDiv .GroupSetting-main-window .GroupSetting-main-wrapper .group-leaders .group-leaders-outDiv .group-leaders-list {
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+    
+}
+.settingOutDiv .GroupSetting-main-window .GroupSetting-main-wrapper .group-leaders .group-leaders-outDiv .group-leaders-list select{
+    height: 37px;
+    width: 122px;
+    position: absolute;
+    margin-top: 15px;
+    right: 5%;
+    background: #333333 0% 0% no-repeat padding-box;
+    border-radius: 3px;
+    color: white;
+    text-align: center;
+}
+
+.settingOutDiv .GroupSetting-main-window .GroupSetting-main-wrapper .group-leaders .group-leaders-outDiv .group-leaders-list h2{
+    font: normal normal 600 21px/25px Montserrat;
+    letter-spacing: 0px;
+    color: #000000;
+    padding: 18px 20px 10px;
+    margin-top: 0;
+}
+
+
+.settingOutDiv .GroupSetting-main-window .GroupSetting-main-wrapper .group-leaders .group-leaders-outDiv {
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: scroll; 
+}
+
+.settingOutDiv .GroupSetting-main-window .GroupSetting-main-wrapper .group-leaders .group-leaders-outDiv::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+}
+
+.settingOutDiv .GroupSetting-main-window .group-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 5px 50px;
+}
+
+.settingOutDiv .GroupSetting-main-window .group-buttons>.roundedButton-wrapper {
+    width: 200px;
+    border-radius: 3px;
+    font: normal normal 600 19px/23px Montserrat;
+    padding: 10px;
+    margin: 20px 0;
+}
+@media screen and (max-width: 430px){
+    .settingOutDiv .GroupSetting-main-window .GroupSetting-main-wrapper .group-leaders .group-leaders-outDiv .group-leaders-list h2{
+        font: normal normal 600 15px/25px Montserrat
+    }
+}
+@media screen and (max-width: 480px){
+    .settingOutDiv .GroupSetting-main-window .GroupSetting-main-wrapper .dashboard-nav{
+        font: normal normal 600 15px/24px Montserrat;
+    }
+}

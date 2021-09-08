@@ -1,0 +1,9 @@
+.leadersOutDiv .leadersInDiv .leaders-list .fas{
+    padding:20px 0 0 5px;
+}
+.leadersOutDiv .leadersInDiv .leaders-list .fas.fa-chevron-up {
+    color: #1A8917;
+}
+.leadersOutDiv .leadersInDiv .leaders-list .fas.fa-chevron-down{
+    color: #FF0000;
+}

@@ -1,0 +1,11 @@
+{
+  "AppSyncApiName": "caakmn",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthCognitoUserPoolId": {
+    "Fn::GetAtt": [
+      "authcaakmndcff5bfe",
+      "Outputs.UserPoolId"
+    ]
+  }
+}

@@ -1,0 +1,42 @@
+.squareButtonWithIcon-wrapper input {
+    display: none;
+}
+
+.squareButtonWithIcon-wrapper {
+    width: 20%;
+    height: 117px;
+}
+.squareButtonWithIcon-innerDiv {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    background: #F6F6F6 0% 0% no-repeat padding-box;
+    user-select: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+
+.squareButtonWithIcon-wrapper:hover .squareButtonWithIcon-innerDiv{
+    background-color: #262626;
+    color: #fff;
+}
+
+.squareButtonWithIcon-wrapper input[type="checkbox"]:checked ~ * .squareButtonWithIcon-innerDiv {
+    background-color: #262626;
+    color: #fff;
+}
+
+.squareButtonWithIcon-innerDiv p {
+    font: normal normal 600 10px/13px Montserrat;
+    margin: 0;
+    text-align: center;
+}
+
+.squareButtonWithIcon-innerDiv span {
+    font-size: 53.5px;
+}
+

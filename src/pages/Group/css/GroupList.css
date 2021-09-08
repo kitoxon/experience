@@ -1,0 +1,88 @@
+.grouplist-wrapper {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center; 
+    gap: 39px;
+    padding-top: 50px;
+}
+
+.grouplist-wrapper .left-side{
+    margin-top: 30px;
+    width: 861px;
+    overflow:hidden;
+}
+
+.grouplist-wrapper .right-side{
+    width: 334px;
+}
+
+.grouplist-wrapper .left-side .group-content {
+    box-shadow: 0px 0px 6px #00000029;
+    margin-bottom: 10px;
+    position: relative;
+    height: 12vh;
+    min-height: 80px;
+    border: 1px solid #70707033;
+    background: #F9F9F9 0% 0% no-repeat padding-box;
+}
+
+.grouplist-wrapper .left-side .group-content .layer {
+    background-color: #ffffffd8;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.grouplist-wrapper .left-side .group-content .content-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.grouplist-wrapper .left-side .group-content .content-wrapper img {
+    border-radius: 9999px;
+    width: 68px;
+    height: 68px;
+    object-fit: cover;
+    margin: 0 1vw 0 1.4vw;
+}
+
+.grouplist-wrapper .left-side .group-content .content-wrapper .text-wrapper h3 {
+    font: normal normal 600 16px/19px Montserrat;
+    letter-spacing: 0.51px;
+    margin: 0;
+    margin-bottom: 4px;
+}
+
+.grouplist-wrapper .left-side .group-content .content-wrapper .text-wrapper p {
+    font: normal normal 500 14px/18px Montserrat;
+    letter-spacing: 0.45px;
+    color: #555555;
+    margin: 0;
+}
+
+.grouplist-wrapper .left-side .group-content .content-wrapper .leave-button {
+    margin: auto;
+    margin-right: 1.25vw;
+    order: 2;
+    background: #333333 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    font: normal normal 600 13px/16px Montserrat;
+    letter-spacing: 0.42px;
+    color: #FFFFFF;
+    padding: 6px 18px;
+    cursor: pointer;
+}
+
+.grouplist-wrapper .left-side .group-content .content-wrapper .leave-button:hover {
+    opacity: 0.8;
+}
+@media (max-width: 1240px) {
+    .grouplist-wrapper .right-side{
+        width: 70%;
+    }
+    .grouplist-wrapper .left-side {
+        width: 70%;
+    }
+}

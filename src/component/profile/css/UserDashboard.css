@@ -1,0 +1,385 @@
+.UserDashboard-wrapper {
+    width: 100%;
+    margin-bottom: 50px;
+}
+.UserDashboard-wrapper .time-navigation {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.UserDashboard-wrapper .last-Post{
+    box-shadow: 0px 3px 6px #00000029;
+    border: 1px solid #70707033;
+    border-radius: 6px;
+    margin-top: 20px;
+}
+.UserDashboard-wrapper .last-Post .header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.UserDashboard-wrapper .last-Post .header h2{
+    font: normal normal bold 20px/24px Montserrat;
+    letter-spacing: 0px;
+    color: #000000;
+    margin-top: 10px;
+}
+.UserDashboard-wrapper .last-Post .header .roundedButton-wrapper{
+    width: 15%;
+    padding: 10px 0;
+}
+.UserDashboard-wrapper .last-Post .post {
+    background: #F9F9F9 0% 0% no-repeat padding-box;
+    border-radius: 0px 0px 5px 5px;
+    display: flex;
+    flex-direction: row;
+}
+.UserDashboard-wrapper .last-Post .post img{
+    border-radius: 5px;
+    padding: 10px;
+    height: 35%;
+    width: 35%;
+}
+
+.UserDashboard-wrapper .last-Post .post .post-detail img {
+    border-radius: 50%;
+    height: 72px;
+    width: 72px;
+}
+
+.UserDashboard-wrapper .last-Post .post .post-detail div{
+    display: flex;
+    flex-direction: row;
+}
+
+.UserDashboard-wrapper .last-Post .post .post-detail div .details {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+.UserDashboard-wrapper .last-Post .post .post-detail div .details h4{
+    font: normal normal bold 23px/28px Montserrat;
+    letter-spacing: 0px;
+    color: #000000;
+    margin-bottom: 0;
+    margin-top: 15px;
+}
+.UserDashboard-wrapper .last-Post .post .post-detail div .details span{
+    font: normal normal bold 18px/22px Montserrat;
+    letter-spacing: 0px;
+    color: #989696;
+}
+.UserDashboard-wrapper .last-Post .post .post-detail div .details h5{
+    font: normal normal normal 17px/20px Montserrat;
+    letter-spacing: 0px;
+    color: #000000;
+    margin: 0;
+}
+.UserDashboard-wrapper .last-Post .post .post-detail p{
+    font: normal normal normal 14px/18px Montserrat;
+    letter-spacing: 0px;
+    color: #000000;
+    padding-left: 15px;
+    width: 70%;
+}
+.UserDashboard-wrapper .last-Post .post .post-detail i{
+    width: 17px;
+    height: 25px;
+    margin-left: 10px;
+}
+.UserDashboard-wrapper .last-Post .post .post-detail span{
+    font: normal normal bold 14px/18px Montserrat;
+    letter-spacing: 0px;
+    color: #333333;
+}
+.UserDashboard-wrapper .last-Post .post .post-detail h6{
+    text-decoration: underline;
+    font: normal normal normal 15px/19px Montserrat;
+    letter-spacing: 0px;
+    color: #000000;
+    margin-left: 10px;
+}
+.UserDashboard-wrapper .followers-comments{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.UserDashboard-wrapper .followers-comments .followers, .comments{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border: 1px solid #70707033;
+    border-radius: 6px;
+    width: 48%;
+}
+
+.UserDashboard-wrapper .followers-comments .followers h3, .comments h3{
+    text-align: center;
+    font: normal normal bold 22px/27px Montserrat;
+    letter-spacing: 0px;
+    color: #000000;
+}
+
+.UserDashboard-wrapper .followers-comments .followers .leaders-list img{
+    border-radius: 50%;
+    width: 49px;
+    height: 49px;
+    padding: 10px;
+}
+.UserDashboard-wrapper .followers-comments .followers .leaders-list {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    padding: 0 40px;
+}
+
+.UserDashboard-wrapper .followers-comments .followers .leaders-list p{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font: normal normal 600 16px/19px Montserrat;
+    letter-spacing: 0px;
+    color: #000000;
+}
+.UserDashboard-wrapper .followers-comments .followers .leaders-list p span{
+    text-align: left;
+    font: normal normal normal 14px/18px Montserrat;
+    letter-spacing: 0px;
+    color: #666666;
+}
+.UserDashboard-wrapper .followers-comments .followers .leaders-list .roundedButton-wrapper{
+    width: 20%;
+    margin-top: 17px;
+    position: absolute;
+    padding-bottom: 0;
+    padding-top: 0;
+    right: 15%;
+    height: 31px;
+}
+.UserDashboard-wrapper .followers-comments .followers .leaders-list .roundedButton-wrapper p{
+    color: #FFFFFF;
+    text-align: center;
+}
+.UserDashboard-wrapper .followers-comments .followers p{
+    text-decoration: underline;
+    font: normal normal normal 18px/22px Montserrat;
+    letter-spacing: 0px;
+    color: #000000;
+    text-align: center;
+}
+
+.UserDashboard-wrapper .followers-comments .comments .comment{
+    height: 69px;
+    width: 100%;
+    background: #F6F6F6 0% 0% no-repeat padding-box;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+.UserDashboard-wrapper .followers-comments .comments .comment img{
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 6px;
+    width: 81px;
+    height: 47px; 
+    margin: 10px;
+}
+.UserDashboard-wrapper .followers-comments .comments .comment span{
+    font: normal normal normal 15px/17px Times New Roman;
+    letter-spacing: 0px;
+    color: #000000;
+    padding: 20px 30px;
+}
+
+.UserDashboard-wrapper .reports {
+    margin-top: 40px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border: 1px solid #70707033;
+    border-radius: 6px;
+}
+.UserDashboard-wrapper .reports h3{
+    text-align: center;
+}
+.UserDashboard-wrapper .reports .header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.UserDashboard-wrapper .reports .header p{
+    font: normal normal 500 20px/24px Montserrat;
+    letter-spacing: 0px;
+    color: #262626;
+}
+.UserDashboard-wrapper .reports .report-posts h4{
+    font: normal normal bold 16px/19px Montserrat;
+    letter-spacing: 0px;
+    color: #000000;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.UserDashboard-wrapper .reports .report-posts{
+    background: #F9F9F9 0% 0% no-repeat padding-box;
+    border: 1px solid #70707033;
+    border-radius: 6px;
+    margin: 20px 15px;
+    position: relative;
+}
+.UserDashboard-wrapper .reports .report-posts .report-section{
+    display: flex;
+    flex-direction: row;
+}
+.UserDashboard-wrapper .reports .report-posts .report-section img{
+    width: 95px;
+    height: 95px;
+    padding: 0 20px 10px;
+}
+.UserDashboard-wrapper .reports .report-posts .report-section .delete span{
+    font: normal normal normal 16px/18px Times New Roman;
+    letter-spacing: 0px;
+    color: #000000;
+}
+.UserDashboard-wrapper .reports .report-posts .report-section .delete p {
+    font: normal normal medium 17px/20px Montserrat;
+    letter-spacing: 0px;
+    color: #000000;
+}
+.UserDashboard-wrapper .reports .report-posts .report-section .delete p .you{
+    font: normal normal bold 17px/20px Montserrat;
+    letter-spacing: 0px;
+    color: #000000;
+}
+.UserDashboard-wrapper .reports .report-posts .report-section .delete p .author{
+    font: normal normal bold 17px/20px Montserrat;
+    letter-spacing: 0px;
+    color: #FF0000;
+}
+.UserDashboard-wrapper .reports .report-posts .report-section .delete p .fa-paper-plane{
+    margin-left: 120px;
+}
+.UserDashboard-wrapper .reports .report-posts .report-section .delete p .fa-trash-alt{
+    margin-left: 30px;
+}
+.UserDashboard-wrapper .active-viewed{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.UserDashboard-wrapper .active-viewed .active-users {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border: 1px solid #70707033;
+    border-radius: 6px;
+    width: 48%;
+}
+.UserDashboard-wrapper .active-viewed .active-right{
+    width: 48%;
+}
+.UserDashboard-wrapper .active-viewed .active-users h3{
+    text-align: center;
+    font: normal normal bold 22px/27px Montserrat;
+    letter-spacing: 0px;
+    color: #000000;
+}
+.UserDashboard-wrapper .active-viewed .active-users .leaders-list img{
+    border-radius: 50%;
+    width: 49px;
+    height: 49px;
+    padding: 10px;
+}
+.UserDashboard-wrapper .active-viewed .active-users .leaders-list {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    padding: 0 40px;
+}
+
+.UserDashboard-wrapper .active-viewed .active-users .leaders-list p{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font: normal normal 600 16px/19px Montserrat;
+    letter-spacing: 0px;
+    color: #000000;
+}
+.UserDashboard-wrapper .active-viewed .active-users .leaders-list p span{
+    text-align: left;
+    font: normal normal normal 14px/18px Montserrat;
+    letter-spacing: 0px;
+    color: #666666;
+}
+.UserDashboard-wrapper .active-viewed .active-users .leaders-list .roundedButton-wrapper{
+    width: 20%;
+    margin-top: 17px;
+    position: absolute;
+    padding-bottom: 0;
+    padding-top: 0;
+    right: 15%;
+    height: 31px;
+}
+.UserDashboard-wrapper .active-viewed .active-users .leaders-list .roundedButton-wrapper p{
+    color: #FFFFFF;
+    text-align: center;
+}
+.UserDashboard-wrapper .active-viewed .active-users p{
+    text-decoration: underline;
+    font: normal normal normal 18px/22px Montserrat;
+    letter-spacing: 0px;
+    color: #000000;
+    text-align: center;
+}
+.UserDashboard-wrapper .active-viewed .active-right .most-viewed{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border: 1px solid #70707033;
+    border-radius: 6px;
+}
+.UserDashboard-wrapper .active-viewed .active-right .most-viewed h3{
+    text-align: center;
+    font: normal normal bold 23px/28px Montserrat;
+    letter-spacing: 0px;
+    color: #000000;
+}
+
+.UserDashboard-wrapper .active-viewed .active-right .most-viewed span{
+    font: normal normal normal 15px/19px Montserrat;
+    letter-spacing: 0px;
+    color: #000000;
+    float: right;
+    margin-right: 20px;
+    margin-bottom: 5px;
+}
+.UserDashboard-wrapper .active-viewed .active-right .most-viewed p{
+    text-decoration: underline;
+    font: normal normal normal 14px/18px Montserrat;
+    letter-spacing: 0px;
+    color: #000000;
+    text-align: center;
+}
+.UserDashboard-wrapper .active-viewed .active-right .most-viewed div{
+    margin: 20px;
+}
+.UserDashboard-wrapper .active-viewed .active-right .most-viewed div canvas{
+    border: 1px solid black;
+}
+.UserDashboard-wrapper .active-viewed .active-right .caak-ads{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border: 1px solid #70707033;
+    border-radius: 6px;
+    margin-top: 20px;
+}
+.UserDashboard-wrapper .active-viewed .active-right .caak-ads img{
+    border-radius: 6px;
+    width: 375px;
+    height: 220px;
+    margin: 10px;
+}
+.UserDashboard-wrapper .active-viewed .active-right .caak-ads h3{
+    text-align: center;
+    font: normal normal 600 21px/25px Montserrat;
+    letter-spacing: 0px;
+    color: #000000;
+}

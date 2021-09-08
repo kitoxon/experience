@@ -1,0 +1,52 @@
+.socialButton-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    width: 100%;
+    height: 45px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font: normal normal 700 16px/19px 'Montserrat';
+    border: solid;
+    border-width: 1px;
+    border-radius: 6px;
+    border-color: #70707033;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.socialButton-wrapper span {
+    font-size: 20px;
+}
+
+.Facebook {
+    background-color: #5F73A7;
+    color: #fff;
+}
+
+.Facebook:hover {
+    background-color: #4E5F8A;
+}
+
+.Gmail {
+    background-color: #fff;
+    color: #000;
+}
+
+.Gmail span {
+    color: #EA4335;
+}
+
+.Gmail:hover {
+    background-color: #eeeeee;
+}
+
+.Twitter {
+    background-color: #4FBCEF;
+    color: #fff;
+}
+
+.Twitter:hover {
+    background-color: #48A6D2;
+}

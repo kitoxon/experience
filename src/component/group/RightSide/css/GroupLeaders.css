@@ -1,0 +1,38 @@
+.leadersOutDiv .leadersInDiv .leaders-list {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+.leadersOutDiv .leadersInDiv .leaders-list img{
+    border-radius: 50%;
+    width: 49px;
+    height: 49px;
+    padding: 10px;
+}
+.leadersOutDiv .leadersInDiv .leaders-list p{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font: normal normal 600 16px/19px Montserrat;
+    letter-spacing: 0px;
+    color: #000000;
+}
+.leadersOutDiv .leadersInDiv .leaders-list p span{
+    text-align: left;
+    font: normal normal normal 14px/18px Montserrat;
+    letter-spacing: 0px;
+    color: #666666;
+}
+.leadersOutDiv .leadersInDiv .leaders-list .roundedButton-wrapper{
+    width: 20%;
+    margin-top: 17px;
+    position: absolute;
+    padding-bottom: 0;
+    padding-top: 0;
+    right: 5%;
+    height: 31px;
+}
+.leadersOutDiv .leadersInDiv .leaders-list .roundedButton-wrapper p{
+    color: #FFFFFF;
+    text-align: center;
+}

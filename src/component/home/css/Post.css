@@ -1,0 +1,130 @@
+.Post-wrapper .image{
+  position: relative;
+  user-select: none;
+}
+
+.Post-wrapper .photo {
+  transition: 0.2s;
+}
+.Post-wrapper .photo img{
+  border-radius: 6px;
+  max-height: 720px;
+  min-height: 224px;
+}
+
+.Post-wrapper div span{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* number of lines to show */
+  -webkit-box-orient: vertical;
+  font: normal normal bold 15px/17px Times New Roman;
+  letter-spacing: 0px;
+  color: #666666;
+}
+
+.Post-wrapper .icon {
+  padding: 0 10px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  bottom: 3px;
+  width: 94.5%;
+  letter-spacing: 0px;
+  border-radius: 6px;
+  color: #FFFFFF;
+  opacity: 0;
+  transition: 0.2s;
+  gap: 1vw;
+  background: rgba(0,0,0,0);
+  box-shadow: 0px 0px 6px #00000029;
+  border-top: 1px solid #70707033;
+}
+
+.Post-wrapper .icon i {
+  z-index: 50;
+  font-size: 22px;
+}
+
+.Post-wrapper .icon p {
+  display: inline-block;
+  font: normal normal 500 18px/24px Montserrat;
+  margin: 15px 5px;
+}
+.Post-wrapper .icon.active-reaction i.fas.fa-hand-peace {
+  color: #ffcd44;
+  animation: 0.3s;
+  transform: scale(110%);
+}
+
+.Post-wrapper .name{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 0;
+  color: white;
+  font-size: 20px;
+  width: 100%;
+  background: rgba(0,0,0,0);
+  box-shadow: 0px 0px 6px #00000029;
+  border-bottom: 1px solid #70707033;
+  transition: 0.2s;
+  opacity: 0;
+}
+
+.Post-wrapper .name .outDiv {
+  display: none;
+}
+
+.Post-wrapper .name:hover .outDiv{
+  display: block;
+}
+
+.Post-wrapper .name img{
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  padding: 10px;
+  transition: 1s;
+  object-fit: cover;
+}
+
+.Post-wrapper .name span{
+  margin-bottom: 5px;
+  transition: 0.2s;
+  font: normal normal 600 14px Montserrat;
+  letter-spacing: 0px;
+  color: #FFFFFF
+}
+
+.Post-wrapper .image:hover .icon{
+  background: rgba(0,0,0,0.7);
+  opacity: 1;
+}
+
+.Post-wrapper .image:hover .name{
+  background: rgba(0,0,0,0.7);
+  opacity: 1;
+}
+
+.Post-wrapper .image:hover .photo{
+  filter: brightness(70%);
+}
+
+.Post-wrapper .image:hover .menu {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.Post-wrapper .image:hover .menu:hover {
+  opacity: 1;
+}
+
+.Post-wrapper .icon .fas.fa-hand-peace:hover{
+  color: #ffcd44;
+}
+
+.Post-wrapper .icon .fas:hover{
+  color: cyan;
+}

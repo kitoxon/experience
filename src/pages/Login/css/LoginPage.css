@@ -1,0 +1,147 @@
+.outerDiv {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    backdrop-filter: blur(10px);
+    z-index: 9999;
+    position: fixed;
+    overflow: hidden;
+}
+.outerDiv .innerDiv{
+    width: 27%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #70707033;
+    box-shadow: 0px 0px 6px #00000029;
+    background: white;
+    border-radius: 6px;
+    overflow-y: auto;
+    max-height: 900px;
+}
+
+.outerDiv .innerDiv .insideDiv{
+    width: 80%;
+}
+
+.outerDiv .innerDiv .insideDiv h1{
+    text-align: center;
+    margin: 70px 0 50px;
+    color: #000000;
+    font: normal normal 800 42px/52px Montserrat;
+}
+.outerDiv .innerDiv .insideDiv h2{
+    text-align: center;
+    margin: 70px 0 50px;
+    color: #333333;
+    font: normal normal 800 35px/43px Montserrat;
+}
+.outerDiv .innerDiv .insideDiv h3{
+    text-align: center;
+    color: #000000;
+    font: normal normal 600 29px/35px Montserrat;
+}
+.outerDiv .innerDiv .insideDiv i{
+    float: right;
+    color: #000000;
+    font-size: 20px;
+    margin: 30px 0;
+    cursor: pointer;
+}
+
+.outerDiv .innerDiv .insideDiv .bottomDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.outerDiv .innerDiv .insideDiv .bottomDiv p{
+    color: #666666;
+    font: normal normal 500 16px/19px Montserrat;
+    letter-spacing: 0px;
+    opacity: 1;
+    margin-right: 8px;
+}
+.outerDiv .innerDiv .insideDiv .bottomDiv .signUp{
+    color: #000000;
+    text-decoration: none;
+    font: normal normal bold 16px/19px Montserrat;
+    letter-spacing: 0px;
+    cursor: pointer;
+}
+
+.outerDiv .innerDiv .insideDiv .bottomDiv .signUp:hover{
+    text-decoration: underline;
+}
+.outerDiv .innerDiv .insideDiv .mailorPhone {
+    margin-bottom: 10px;
+}
+.outerDiv .innerDiv .insideDiv .mailorPhone span{
+    font: normal normal 600 16px/19px Montserrat;
+}
+
+.outerDiv .innerDiv .insideDiv .mailorPhone span span{
+    color: #666666;
+    font: normal normal 300 16px/19px Montserrat;
+}
+
+.outerDiv .innerDiv .insideDiv .passwordReset{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.outerDiv .innerDiv .insideDiv .passwordReset span{
+    font: normal normal 600 16px/19px Montserrat;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+}
+.outerDiv .innerDiv .insideDiv .passwordReset .forgotPassword{
+    text-decoration: underline;
+    font: normal normal 500 16px/19px Montserrat;
+    letter-spacing: 0px;
+    color: #666666;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.outerDiv .innerDiv .insideDiv .errormessage{
+    color: red;
+    text-align: right;
+    margin-top: 0;
+}
+
+.hidden {
+    display: none;
+}
+.outerDiv .innerDiv .insideDiv .textFieldWithLabel-wrapper {
+    margin-bottom: 0px;
+}
+.outerDiv .innerDiv .insideDiv .roundedButton-wrapper{
+    margin-top: 20px;
+}
+
+.outerDiv .innerDiv .insideDiv .textFieldWithLabel-wrapper label {
+    font: normal normal 500 14px/19px Montserrat;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+    .outerDiv .innerDiv{
+        width: 50%;
+    }
+  }
+@media screen and (max-width: 600px){
+    .outerDiv .innerDiv{
+        width: 100%;
+    }
+    .outerDiv .innerDiv .insideDiv h2{
+        margin: 0;
+    }
+}

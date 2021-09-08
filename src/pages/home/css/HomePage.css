@@ -1,0 +1,127 @@
+.HomePage-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 3vh;
+}
+
+.HomePage-wrapper .my-masonry-grid {
+  display: -webkit-box; /* Not needed if autoprefixing */
+  display: -ms-flexbox; /* Not needed if autoprefixing */
+  display: flex;
+  margin-left: -30px; /* gutter size offset */
+  width: auto;
+}
+.HomePage-wrapper .my-masonry-grid_column {
+  padding-left: 30px; /* gutter size */
+  background-clip: padding-box;
+}
+
+/* Style your items */
+.HomePage-wrapper .my-masonry-grid_column > div { /* change div to reference your elements you put in <Masonry> */
+  margin-bottom: 30px;
+} 
+
+.HomePage-wrapper .post-skeleton-wrapper {
+  min-width: 200px;
+  min-height: 40vh;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  background-color: #f0f0f0;
+  padding: 10px;
+  gap: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.HomePage-wrapper .post-skeleton-wrapper .post-icon-skeleton {
+  border-radius: 9999px;
+  height: 58px;
+  width: 58px;
+  background-color: #dadada;
+}
+
+.HomePage-wrapper .post-skeleton-wrapper .post-author-skeleton {
+  height: 30px;
+  width: 10vw;
+  background-color: #dadada;
+  margin-bottom: 12px;
+}
+
+.HomePage-wrapper>.home {
+  width: 66%;
+}
+
+.HomePage-wrapper .shimmer {
+  animation : shimmer 2s infinite;
+  background: linear-gradient(to right, #e2e2e2 4%, #cfcfcf 25%, #dfdfdf 36%);
+  background-size: 1000px 100%;
+}
+
+.HomePage-wrapper .post-skeleton-wrapper.shimmer {
+  animation : shimmer 3s infinite;
+  background: linear-gradient(to right, #f0f0f0 4%, #ececec 17%, #f3f3f3 36%);
+  background-size: 1000px 100%;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  50% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+.loader-ellips {
+  font-size: 20px; /* change size here */
+  position: relative;
+  width: 4em;
+  height: 1em;
+  margin: 10px auto;
+}
+
+.loader-ellips__dot {
+  display: block;
+  width: 1em;
+  height: 1em;
+  border-radius: 0.5em;
+  background: #555; /* change color here */
+  position: absolute;
+  animation-duration: 0.5s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+}
+
+.loader-ellips__dot:nth-child(1),
+.loader-ellips__dot:nth-child(2) {
+  left: 0;
+}
+.loader-ellips__dot:nth-child(3) { left: 1.5em; }
+.loader-ellips__dot:nth-child(4) { left: 3em; }
+
+@keyframes reveal {
+  from { transform: scale(0.001); }
+  to { transform: scale(1); }
+}
+
+@keyframes slide {
+  to { transform: translateX(1.5em) }
+}
+
+.loader-ellips__dot:nth-child(1) {
+  animation-name: reveal;
+}
+
+.loader-ellips__dot:nth-child(2),
+.loader-ellips__dot:nth-child(3) {
+  animation-name: slide;
+}
+
+.loader-ellips__dot:nth-child(4) {
+  animation-name: reveal;
+  animation-direction: reverse;
+}
